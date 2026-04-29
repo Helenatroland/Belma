@@ -1,0 +1,21 @@
+---
+import heading from "./heading.astro";
+import Layout from "../layouts/Layout.astro";
+import logo from "../img/logo_belma.svg";
+---
+
+<header>
+    
+</header>
+
+
+<script defer>
+  var btn = document.getElementById("mobile-menu-button");
+  var menu = document.getElementById("mobile-menu");
+
+  if (btn && menu) {
+    btn.onclick = function() {
+      menu.classList.toggle("hidden");
+    };
+  }
+</script>
