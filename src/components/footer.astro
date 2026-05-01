@@ -1,0 +1,22 @@
+---
+import Heading from "./heading.astro"
+import Text from "./text.astro"
+import footer_1 from "../img/footer_1.png"
+import footer_2 from "../img/footer_2.png"
+---
+<footer class="bg-primary">
+  <Heading type="h3" stylingclasses="text-neutral-white"> Sign up & get 10% off your next drink!</Heading>
+  <button>EMAIL ADDRESS</button>
+  <button>SUBMIT</button>
+  <div class="w-full h-[2px] bg-secondary"></div>
+  <a href="https://www.facebook.com/p/Belma1650-61571598181899/">
+    <img src={footer_1.src} alt="Facebook" class="w-10 h-10" /></a>
+    <a href="https://www.instagram.com/belma.1650/reels/">
+    <img src={footer_2.src} alt="Instagram" class="w-13 h-13" /></a>
+    <Text stylingclasses="text-secondary font-bold">CONTACT</Text>
+    <Text stylingclasses="text-secondary">Istedgade 48</Text>
+    <Text stylingclasses="text-secondary">1650 København V</Text>
+    <Text stylingclasses="text-secondary"><a href="tel:+4531343787" class="no-underline text-inherit">+45 31 34 37 87</a></Text>
+    <Text stylingclasses="text-secondary"><a href="mailto:1650@belma.dk" class="no-underline text-inherit">1650@belma.dk</a></Text>
+    <img src={footer_2.src} alt="Instagram" class="w-13 h-13" /></a>
+</footer>
