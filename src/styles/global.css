@@ -22,9 +22,6 @@
 }
 
 @layer base {
-  body {
-    @apply font-outfit text-neutral-black;
-  }
 }
 
 @layer components {
