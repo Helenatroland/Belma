@@ -1,22 +1,40 @@
 ---
 import Heading from "./heading.astro"
 import Text from "./text.astro"
+import Button from "./button.astro"
 import footer_1 from "../img/footer_1.png"
 import footer_2 from "../img/footer_2.png"
+import Logo from "../img/logo_belma.svg"
 ---
-<footer class="bg-primary">
-  <Heading type="h3" stylingclasses="text-neutral-white"> Sign up & get 10% off your next drink!</Heading>
-  <button>EMAIL ADDRESS</button>
-  <button>SUBMIT</button>
-  <div class="w-full h-[2px] bg-secondary"></div>
-  <a href="https://www.facebook.com/p/Belma1650-61571598181899/">
-    <img src={footer_1.src} alt="Facebook" class="w-10 h-10" /></a>
-    <a href="https://www.instagram.com/belma.1650/reels/">
-    <img src={footer_2.src} alt="Instagram" class="w-13 h-13" /></a>
+<footer class="bg-primary p-10">
+<!----------------- Nyhedsbrev signup-------------------->
+ <div class="flex flex-col items-center text-center gap-6 md:flex-row md:items-center md:justify-between md:text-left">
+
+  <Text stylingclasses="text-neutral-white">Sign up & get 10% off your next drink!</Text>
+
+  <div class="flex flex-col items-center gap-4 md:flex-row md:items-center">
+    <input type="email" placeholder="EMAIL ADDRESS" class="bg-cta font-bold text-neutral-black p-3.5 text-sm md:mr-10 md:pr-35"/>
+
+    <Button stylingclasses="font-bold px-15">SUBMIT</Button>
+  </div>
+</div>
+
+<div class="w-full h-[2px] bg-secondary mb-5 mt-5"></div>
+
+<!----------------- Facebook og Instagram ikoner-------------------->
+<div class="flex items-center gap-4 justify-center md:justify-start mb-2">
+  <a href="https://www.facebook.com/p/Belma1650-61571598181899/"><img src={footer_1.src} alt="Facebook" class="w-13 h-13" /></a>
+  <a href="https://www.instagram.com/belma.1650/reels/"><img src={footer_2.src} alt="Instagram" class="w-17 h-17" /></a>
+</div>
+ 
+<!----------------- Kontakt info og logo-------------------->
+<div class="flex flex-col items-center text-center gap-10 md:flex-row md:justify-between md:items-end md:text-left">
+  <div>
     <Text stylingclasses="text-secondary font-bold">CONTACT</Text>
     <Text stylingclasses="text-secondary">Istedgade 48</Text>
     <Text stylingclasses="text-secondary">1650 København V</Text>
     <Text stylingclasses="text-secondary"><a href="tel:+4531343787" class="no-underline text-inherit">+45 31 34 37 87</a></Text>
     <Text stylingclasses="text-secondary"><a href="mailto:1650@belma.dk" class="no-underline text-inherit">1650@belma.dk</a></Text>
-    <img src={footer_2.src} alt="Instagram" class="w-13 h-13" /></a>
-</footer>
+  </div>
+  <img src={Logo.src} alt="Logo" class="w-80" />
+</div>
