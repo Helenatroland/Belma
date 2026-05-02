@@ -3,21 +3,90 @@ import Layout from '../layouts/Layout.astro';
 import Heading from '../components/heading.astro';
 import text from '../components/text.astro';
 import Button from '../components/button.astro';
+import img_1 from '../img/img_1.png';
+import Text from '../components/text.astro';
+import Logo from '../img/logo_belma.svg';
+import img_2 from '../img/img_2.png';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <main class="flex-1">
-    <section class="hero bg-accent-beige py-20">
-      <div class="mx-auto max-w-4xl px-4 text-center">
-        <Heading type="h1" stylingclasses="mb-6">Velkommen til Belma</Heading>
-        <text type="bodyLarge" stylingclasses="mb-8 block">
-          Oplev vores unikke menu med lækre retter og drikkevarer i en hyggelig atmosfære.
-        </text>
-        <Button href="/menu" variant="primary">Se vores menu</Button>
-      </div>
+  <!----------------- Hero section -------------------->
+  <img src={Logo.src} alt="Logo" class="w-100 mx-auto" />
+  <div class="flex justify-center mb-10"><Button href="/menu" variant="primary">EXPLORE OUR MENU</Button></div>
+
+
+    <!----------------- Your go to spot section-------------------->
+    <section class="bg-secondary">
+        <img src={img_1.src} alt="Logo" class="w-100 mx-auto py-8" />
+        <Text stylingclasses="text-center mx-8 pb-10">At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. Whether you're starting your morning, taking a lunch break, or meeting friends in the evening, Belma is a place to stay all day.</Text>
     </section>
+
+      <!----------------- Opening hours section-------------------->
+      <Heading type="h2" stylingclasses='text-center font-bold py-5'>OPENING HOURS</Heading>
+ 
+      <div class="flex justify-center py-16">
+      <div class="bg-accent-beige text-center px-8 py-3 w-full max-w-md">
+
+    <img src={Logo.src} alt="Logo" class="w-50 mx-auto mb-6" />
+
+   <div class="space-y-1 font-special">
+  <Text>Istedgade 48</Text>
+  <Text>1650 København V</Text>
+  <Text>+45 31 34 37 87</Text>
+  <Text>1650@belma.dk</Text>
+
+  <Text>----------------------------------------------------</Text>
+  <Text>----------------------------------------------------</Text>
+
+
+  <div class="flex justify-between"><Text stylingclasses="text-[16px] md:text-[17px] lg:text-[18px] font-special">Opening Hours:</Text></div>
+
+<div class="space-y-2">
+<div class="flex justify-between">
+    <Text>Monday</Text>
+    <Text>09:00 - 24:00</Text>
+  </div>
+
+  <div class="flex justify-between">
+    <Text>Tuesday</Text>
+    <Text>09:00 - 24:00</Text>
+  </div>
+
+  <div class="flex justify-between">
+    <Text>Wednesday</Text>
+    <Text>09:00 - 24:00</Text>
+  </div>
+
+  <div class="flex justify-between">
+    <Text>Thursday</Text>
+    <Text>09:00 - 01:00</Text>
+  </div>
+
+  <div class="flex justify-between">
+    <Text>Friday</Text>
+    <Text>09:00 - 03:00</Text>
+  </div>
+
+  <div class="flex justify-between">
+    <Text>Saturday</Text>
+    <Text>09:00 - 03:00</Text>
+  </div>
+
+  <div class="flex justify-between">
+    <Text>Sunday</Text>
+    <Text>09:00 - 24:00</Text>
+  </div>
+   <img src={img_2.src} alt="random barcode" class="mx-auto" />
+   <Text>*** This is just a random barcode for show ***</Text>
+
+</div>
+  </div>
+</div>
+
+
+      
   </main>
 </Layout>
