@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Heading from '../components/heading.astro';
+import Text from '../components/text.astro';
+---
+
+<Layout title="Menu">
+  <main>
+ 
+<!-- section 1 -->
+<section class="w-full px-4 md:px-8 lg:px-12">
+  <Heading type="h1" stylingclasses="text-center pt-5 pb-24">
+    BELMAS SELECTION
+  </Heading>
+
+  <div class="mx-auto max-w-342.5">
+    <Text>
+      Explore our menu and discover a selection of carefully crafted food and drinks for every moment of the day. From breakfast favourites and great coffee to cocktails, wine, and evening bites - there is something for every taste.
+    </Text>
+
+    <!-- INSERT GRAPHIC IMG -->
+
+    <Heading type="h3" stylingclasses="font-medium py-5">
+      Choose a category below and find your next favourite at Belma.
+    </Heading>
+  </div>
+</section>
+
+
+    <!-- section 2 -->
+    <section class="w-full px-4 py-6 md:px-8 lg:px-12">
+      <div class="mx-auto max-w-342.5 border border-primary">
+        <!-- box 1 -->
+        <a
+          href="/to_eat"
+          class="block border-b border-primary px-6 py-6 transition-colors hover:bg-cta-hover md:flex md:min-h-22.5 md:items-center md:justify-between md:px-24 lg:px-48.75"
+        >
+          <div>
+            <Heading type="labelLarge" stylingclasses="leading-none">
+              TO EAT
+            </Heading>
+
+            <Heading type="graphic" stylingclasses="mt-3 leading-none">
+              BREAKFAST, LUNCH, ALL DAY DISHES, & SNACKS
+            </Heading>
+          </div>
+
+          <div class="mt-5 md:mt-0">
+            <Heading type="labelLarge" stylingclasses="leading-none">
+              NO. 1 - 2
+            </Heading>
+          </div>
+        </a>
+
+        <!-- box 2 -->
+        <a
+          href="/sober_sips"
+          class="block border-b border-primary px-6 py-6 transition-colors hover:bg-cta-hover md:flex md:min-h-22.5 md:items-center md:justify-between md:px-24 lg:px-48.75"
+        >
+          <div>
+            <Heading type="labelLarge" stylingclasses="leading-none">
+              SOBER SIPS
+            </Heading>
+
+            <Heading type="graphic" stylingclasses="mt-3 leading-none">
+              SODA, TEA, COFFEE & OTHER NON-ALCOHOLIC BEVERAGES
+            </Heading>
+          </div>
+
+          <div class="mt-5 md:mt-0">
+            <Heading type="labelLarge" stylingclasses="leading-none">
+              NO. 3 - 4
+            </Heading>
+          </div>
+        </a>
+
+        <!-- box 3 -->
+        <a
+          href="/percentages"
+          class="block px-6 py-6 transition-colors hover:bg-cta-hover md:flex md:min-h-22.5 md:items-center md:justify-between md:px-24 lg:px-48.75"
+        >
+          <div>
+            <Heading type="labelLarge" stylingclasses="leading-none">
+              SIPS WITH PERCENTAGES
+            </Heading>
+
+            <Heading type="graphic" stylingclasses="mt-3 leading-none">
+              BEER, COCKTAILS & WINE (BY GLASS & BOTTLE)
+            </Heading>
+          </div>
+
+          <div class="mt-5 md:mt-0">
+            <Heading type="labelLarge" stylingclasses="leading-none">
+              NO. 5 - 8
+            </Heading>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- section 3 (img) -->
+    <section>
+    </section>
+  </main>
+</Layout>
