@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Heading from '../components/heading.astro';
+import cold_drinks_menu2 from '../img/cold_drinks_menu2.png';
+import tea_and_coffee_menu from '../img/tea_and_coffee_menu.png';
+---
+
+<Layout title="Sober sips">
+  <main>
+    <!-- section 1 -->
+    <section class="w-full px-4 py-8 md:px-8 lg:px-12">
+      <div class="mx-auto w-full max-w-125">
+        <Heading type="h2" stylingclasses="pb-4">
+          NO. 1
+        </Heading>
+
+        <img
+          src={cold_drinks_menu2.src}
+          alt="Cold drinks menu"
+          class="w-full"
+        />
+      </div>
+    </section>
+
+        <!-- section 2 -->
+   <section class="w-full px-4 pt-8 pb-20 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-125">
+    <Heading type="h2" stylingclasses="pb-4">
+          NO. 2
+        </Heading>
+
+        <img
+          src={tea_and_coffee_menu.src}
+          alt="Tea and coffee menu"
+          class="w-full"
+        />
+      </div>
+    </section>
