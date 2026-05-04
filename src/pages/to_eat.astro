@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Heading from '../components/heading.astro';
+import breakfast_menu from '../img/breakfast_menu.png';
+import food_menu from '../img/food_menu.png';
+---
+
+<Layout title="To eat">
+  <main>
+    <!-- section 1 -->
+    <section class="w-full px-4 py-8 md:px-8 lg:px-12">
+      <div class="mx-auto w-full max-w-125">
+        <Heading type="h2" stylingclasses="pb-4">
+          NO. 1
+        </Heading>
+
+        <img
+          src={breakfast_menu.src}
+          alt="Breakfast menu"
+          class="w-full"
+        />
+      </div>
+    </section>
+
+<!-- section 2 -->
+<section class="w-full px-4 pt-8 pb-20 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-125">
+    <Heading type="h2" stylingclasses="pb-4">
+      NO. 2
+    </Heading>
+
+    <img
+      src={food_menu.src}
+      alt="Food menu"
+      class="w-full"
+    />
+  </div>
+</section>
+
+  </main>
+</Layout>
