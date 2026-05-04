@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Heading from '../components/heading.astro';
+import Text from '../components/text.astro';
+import Button from '../components/button.astro';
+import bottles_drawing from '../img/bottles_drawing.svg';
+---
+
+<Layout title="Menu">
+  <main>
+    <!-- section 1 -->
+    <section class="w-full px-4 md:px-8 lg:px-12">
+      <Heading type="h1" stylingclasses="text-center pt-5 pb-24">
+        ABOUT US
+      </Heading>
+
+      <div class="mx-auto max-w-342.5">
+        <Text> 
+          Belma is inspired by an unstoppable spirit, it’s a place for connection, laughter and memories. Cozy, lively and just the right touch of chaos. Sip, savor, and soak it all in.
+
+          <br /><br />
+
+          At Belma, we’re redefining what an all-day spot can be - making it just as inviting in the morning and midday as it is in the evening. We’re serving up the essentials all day long: craft beers, wines that speak for themselves, cocktails that surprise, and bites you’ll crave. Think crispy baguettes, melty sandwich grillé, artisanal baked goods and coffee that’s as bold as your plans.
+
+          <br /><br />
+
+          Whether you’re stopping by for a slow morning coffee, a laid-back lunch, or a lively night out, Belma is designed to draw you in at any hour.
+          Our menu changes to keep things exciting, so follow us on →
+          <a
+            href="https://www.instagram.com/belma.1650/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary underline underline-offset-4 hover:text-secondary"
+          >
+            Instagram
+          </a>
+          to stay in the know.
+        </Text>
+      </div>
+    </section>
+
+    <div class="mt-20 flex w-full justify-end">
+      <img
+        src={bottles_drawing.src}
+        alt="Bottles drawing menu"
+        class="w-full max-w-55 md:max-w-70 lg:max-w-85"
+      />
+    </div>
+
+    <!-- section 2 -->
+    <!-- BILLEDEGALLERI -->
+
+    <!-- section 3 -->
+    <section class="w-full px-4 md:px-8 lg:px-12">
+      <div class="mx-auto max-w-342.5">
+        <Heading type="h2" stylingclasses="font-bold pt-5 pb-6">
+          Work With Us at Belma
+        </Heading>
+
+        <Text>
+          Belma is built on people, energy, and unforgettable moments. Behind every great coffee, cocktail, and guest experience is a team that brings the place to life every single day.
+          We believe in creating a workplace that is just as welcoming and vibrant as the atmosphere our guests know us for. 
+          <br />
+          A place where personality matters, teamwork is key, and no two days are ever the same.
+          As we continue to grow, we’re always interested in meeting passionate people who would like to become part of the Belma journey.
+        </Text>
+
+        <Heading type="h3" stylingclasses="font-medium pt-5 pb-6">
+          Curious about joining the team? 
+          <br />
+          Explore career opportunities here.
+        </Heading>
+
+        <div class="flex justify-center mb-10">
+          <Button href="/menu" variant="primary">READ MORE</Button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
