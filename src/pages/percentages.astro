@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Heading from '../components/heading.astro';
+import beers_menu from '../img/beers_menu.png';
+import cocktails_menu from '../img/cocktails_menu.png';
+import wines_menu from '../img/wines_menu.png';
+import wine_bottles_menu from '../img/wine_bottles_menu.png';
+---
+
+<Layout title="To eat">
+  <main>
+    <!-- section 1 -->
+    <section class="w-full px-4 py-8 md:px-8 lg:px-12">
+      <div class="mx-auto w-full max-w-125">
+        <Heading type="h2" stylingclasses="pb-4">
+          NO. 1
+        </Heading>
+
+        <img
+          src={beers_menu.src}
+          alt="Beers menu"
+          class="w-full"
+        />
+      </div>
+    </section>
+
+      <!-- section 2 -->
+    <section class="w-full px-4 py-8 md:px-8 lg:px-12">
+      <div class="mx-auto w-full max-w-125">
+        <Heading type="h2" stylingclasses="pb-4">
+          NO. 2
+        </Heading>
+
+        <img
+          src={cocktails_menu.src}
+          alt="Cocktails menu"
+          class="w-full"
+        />
+      </div>
+    </section>
+
+     <!-- section 3 -->
+    <section class="w-full px-4 py-8 md:px-8 lg:px-12">
+      <div class="mx-auto w-full max-w-125">
+        <Heading type="h2" stylingclasses="pb-4">
+          NO. 3
+        </Heading>
+
+        <img
+          src={wines_menu.src}
+          alt="Wines menu"
+          class="w-full"
+        />
+      </div>
+    </section>
+
+            <!-- section 4 -->
+   <section class="w-full px-4 pt-8 pb-20 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-125">
+    <Heading type="h2" stylingclasses="pb-4">
+          NO. 4
+        </Heading>
+
+        <img
+          src={wine_bottles_menu.src}
+          alt="Wine bottles menu"
+          class="w-full"
+        />
+      </div>
+    </section>
+
+
+    </main>
+</Layout>
