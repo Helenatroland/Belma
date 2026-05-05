@@ -7,6 +7,7 @@ import img_1 from '../img/img_1.png';
 import Text from '../components/text.astro';
 import Logo from '../img/logo_belma.svg';
 import img_2 from '../img/img_2.png';
+import img_3 from '../img/img_3.svg';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -85,8 +86,59 @@ import img_2 from '../img/img_2.png';
 </div>
   </div>
 </div>
+</div>
+ <!----------------- Community section-------------------->
+<div class="border border-primary p-6">
 
+  <Heading type="h3" stylingclasses="py-5">
+    Would you like to become part of our community?
+  </Heading>
 
-      
+  <div class="grid grid-cols-2 gap-6">
+
+    <div>
+      <Text>
+        From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.
+      </Text>
+
+      <Text>
+        Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.
+      </Text>
+    </div>
+
+    <div class="flex flex-col gap-4">
+      <div class="w-full">
+        <Button>EMAIL ADDRESS</Button>
+      </div>
+
+      <div class="w-1/2">
+        <Button>SUBMIT</Button>
+      </div>
+    </div>
+
+  </div>
+</div>
+ <!----------------- Reserve table section-------------------->
+  <div class="w-full bg-accent-beige py-10">
+ <Heading type="h2" stylingclasses="py-5 w-full px-20">RESERVE YOUR TABLE </Heading>
+  <div class="w-full px-20">
+  <Text>From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.</Text>
+  <Text>Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.</Text>
+  </div>
+ <div class="flex justify-center mt-10">
+  <Button>MAKE A RESERVATION</Button>
+</div>
+  <img src={img_3.src} alt="Table illustration" class="w-100 mx-auto py-8" />
+</div>
+<!----------------- Reserve table section-------------------->
+ <div class="bg-accent-green">
+<Heading type="h2" stylingclasses="py-5 w-full px-20 text-neutral-white pt-20">EVENTS AT BELMA </Heading>
+<Text stylingclasses="text-neutral-white px-20 mb-5">There’s always something happening at Belma. From special dinners and live music to seasonal gatherings and unique experiences, our events are created to bring people together and make every visit memorable. As part of our community, newsletter subscribers get early access to upcoming events, exclusive invitations, and first-hand updates before anyone else.</Text>
+<Text stylingclasses="text-neutral-white px-20 mb-10">Discover what’s coming next and be part of the Belma experience.</Text>
+<div class="flex justify-center pb-20">
+  <Button>SEE UPCOMING EVENTS</Button>
+</div>
+</div>
+<!----------------- Gallery section-------------------->
   </main>
 </Layout>
