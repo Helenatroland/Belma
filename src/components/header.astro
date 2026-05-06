@@ -10,14 +10,14 @@ const navItems = [
 ];
 ---
 
-<header class="w-full px-4 pb-6 pt-3 md:px-6 md:pb-8 md:pt-4 lg:px-12 lg:pb-14 lg:pt-6">
-  <div class="mx-auto max-w-[1370px] border border-primary py-5 pl-4 pr-5 md:flex md:min-h-[104px] md:items-center md:justify-between md:gap-8 md:px-8 lg:min-h-[138px] lg:pl-[70px] lg:pr-[112px]">
+<header class="w-full pb-3 md:pb-4 lg:pb-5">
+  <div class="w-full border border-primary px-4 pt-4 pb-3 md:flex md:min-h-23 md:items-center md:justify-between md:gap-8 md:px-8 md:pt-5 md:pb-4 lg:min-h-29.5 lg:pl-17.5 lg:pr-28 lg:pt-6 lg:pb-4">
     <div class="flex items-center justify-between">
       <a href="/" aria-label="Belma forside" class="shrink-0">
         <img
           src={logo.src}
           alt="Belma"
-          class="h-auto w-[200px] md:w-[210px] lg:w-[310px]"
+          class="h-auto w-42.5 md:w-47.5 lg:w-65"
         />
       </a>
 
@@ -29,18 +29,18 @@ const navItems = [
         aria-controls="mobile-menu"
         aria-expanded="false"
       >
-        <span class="h-[3px] w-8 bg-secondary transition-transform duration-200 group-hover:scale-x-125"></span>
-        <span class="h-[3px] w-8 bg-secondary transition-transform duration-200 group-hover:scale-x-125"></span>
-        <span class="h-[3px] w-8 bg-secondary transition-transform duration-200 group-hover:scale-x-125"></span>
+        <span class="h-0.75 w-8 bg-secondary transition-transform duration-200 group-hover:scale-x-125"></span>
+        <span class="h-0.75 w-8 bg-secondary transition-transform duration-200 group-hover:scale-x-125"></span>
+        <span class="h-0.75 w-8 bg-secondary transition-transform duration-200 group-hover:scale-x-125"></span>
       </button>
     </div>
 
     <nav
       id="mobile-menu"
-      class="hidden pt-8 md:block md:pt-0"
+      class="hidden pt-6 md:block md:pt-0"
       aria-label="Hovedmenu"
     >
-      <ul class="flex flex-col gap-5 md:flex-row md:flex-wrap md:items-center md:justify-end md:gap-x-6 md:gap-y-3 lg:flex-nowrap lg:gap-10">
+      <ul class="flex flex-col gap-4 md:flex-row md:flex-wrap md:items-center md:justify-end md:gap-x-6 md:gap-y-3 lg:flex-nowrap lg:gap-10">
         {navItems.map((item) => (
           <li>
             <a
