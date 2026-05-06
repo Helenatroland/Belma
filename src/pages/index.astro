@@ -1,144 +1,198 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Heading from '../components/heading.astro';
-import text from '../components/text.astro';
+import Text from '../components/text.astro';
 import Button from '../components/button.astro';
 import img_1 from '../img/img_1.png';
-import Text from '../components/text.astro';
 import Logo from '../img/logo_belma.svg';
 import img_2 from '../img/img_2.png';
 import img_3 from '../img/img_3.svg';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <!----------------- Hero section -------------------->
-  <img src={Logo.src} alt="Logo" class="w-100 mx-auto" />
-  <div class="flex justify-center mb-10"><Button href="/menu" variant="primary">EXPLORE OUR MENU</Button></div>
+  <main>
+    <!----------------- Hero section -------------------->
+    <section class="w-full px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-245 text-center">
+        <img src={Logo.src} alt="Belma logo" class="mx-auto w-100" />
 
-
-    <!----------------- Your go to spot section-------------------->
-    <section class="bg-secondary">
-        <img src={img_1.src} alt="Logo" class="w-100 mx-auto py-8" />
-        <Text stylingclasses="text-center mx-8 pb-10">At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. Whether you're starting your morning, taking a lunch break, or meeting friends in the evening, Belma is a place to stay all day.</Text>
+        <div class="mt-10 flex justify-center">
+          <Button href="/menu" variant="primary">
+            EXPLORE OUR MENU
+          </Button>
+        </div>
+      </div>
     </section>
 
-      <!----------------- Opening hours section-------------------->
-      <Heading type="h2" stylingclasses='text-center font-bold py-5'>OPENING HOURS</Heading>
- 
-      <div class="flex justify-center py-16">
-      <div class="bg-accent-beige text-center px-8 py-3 w-full max-w-md">
+    <!----------------- Your go to spot section -------------------->
+    <section class="w-full bg-secondary px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-245">
+        <img src={img_1.src} alt="Belma interior" class="mx-auto w-100 pb-8" />
 
-    <img src={Logo.src} alt="Logo" class="w-50 mx-auto mb-6" />
-
-   <div class="space-y-1 font-special">
-  <Text>Istedgade 48</Text>
-  <Text>1650 København V</Text>
-  <Text>+45 31 34 37 87</Text>
-  <Text>1650@belma.dk</Text>
-
-  <Text>----------------------------------------------------</Text>
-  <Text>----------------------------------------------------</Text>
-
-
-  <div class="flex justify-between"><Text stylingclasses="text-[16px] md:text-[17px] lg:text-[18px] font-special">Opening Hours:</Text></div>
-
-<div class="space-y-2">
-<div class="flex justify-between">
-    <Text>Monday</Text>
-    <Text>09:00 - 24:00</Text>
-  </div>
-
-  <div class="flex justify-between">
-    <Text>Tuesday</Text>
-    <Text>09:00 - 24:00</Text>
-  </div>
-
-  <div class="flex justify-between">
-    <Text>Wednesday</Text>
-    <Text>09:00 - 24:00</Text>
-  </div>
-
-  <div class="flex justify-between">
-    <Text>Thursday</Text>
-    <Text>09:00 - 01:00</Text>
-  </div>
-
-  <div class="flex justify-between">
-    <Text>Friday</Text>
-    <Text>09:00 - 03:00</Text>
-  </div>
-
-  <div class="flex justify-between">
-    <Text>Saturday</Text>
-    <Text>09:00 - 03:00</Text>
-  </div>
-
-  <div class="flex justify-between">
-    <Text>Sunday</Text>
-    <Text>09:00 - 24:00</Text>
-  </div>
-   <img src={img_2.src} alt="random barcode" class="mx-auto" />
-   <Text>*** This is just a random barcode for show ***</Text>
-
-</div>
-  </div>
-</div>
-</div>
- <!----------------- Community section-------------------->
-<div class="border border-primary p-6">
-
-  <Heading type="h3" stylingclasses="py-5">
-    Would you like to become part of our community?
-  </Heading>
-
-  <div class="grid grid-cols-2 gap-6">
-
-    <div>
-      <Text>
-        From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.
-      </Text>
-
-      <Text>
-        Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.
-      </Text>
-    </div>
-
-    <div class="flex flex-col gap-4">
-      <div class="w-full">
-        <Button>EMAIL ADDRESS</Button>
+        <Text stylingclasses="text-center">
+          At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. Whether you're starting your morning, taking a lunch break, or meeting friends in the evening, Belma is a place to stay all day.
+        </Text>
       </div>
+    </section>
 
-      <div class="w-1/2">
-        <Button>SUBMIT</Button>
+    <!----------------- Opening hours section -------------------->
+    <section class="w-full px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-245">
+        <Heading type="h2" stylingclasses="text-center font-bold pb-10">
+          OPENING HOURS
+        </Heading>
+
+        <div class="mx-auto w-full max-w-md bg-accent-beige px-8 py-8 text-center">
+          <img src={Logo.src} alt="Belma logo" class="mx-auto mb-6 w-50" />
+
+          <div class="space-y-1 font-special">
+            <Text>Istedgade 48</Text>
+            <Text>1650 København V</Text>
+            <Text>+45 31 34 37 87</Text>
+            <Text>1650@belma.dk</Text>
+
+            <Text>----------------------------------------------------</Text>
+            <Text>----------------------------------------------------</Text>
+
+            <div class="flex justify-between">
+              <Text stylingclasses="font-special">
+                Opening Hours:
+              </Text>
+            </div>
+
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <Text>Monday</Text>
+                <Text>09:00 - 24:00</Text>
+              </div>
+
+              <div class="flex justify-between">
+                <Text>Tuesday</Text>
+                <Text>09:00 - 24:00</Text>
+              </div>
+
+              <div class="flex justify-between">
+                <Text>Wednesday</Text>
+                <Text>09:00 - 24:00</Text>
+              </div>
+
+              <div class="flex justify-between">
+                <Text>Thursday</Text>
+                <Text>09:00 - 01:00</Text>
+              </div>
+
+              <div class="flex justify-between">
+                <Text>Friday</Text>
+                <Text>09:00 - 03:00</Text>
+              </div>
+
+              <div class="flex justify-between">
+                <Text>Saturday</Text>
+                <Text>09:00 - 03:00</Text>
+              </div>
+
+              <div class="flex justify-between">
+                <Text>Sunday</Text>
+                <Text>09:00 - 24:00</Text>
+              </div>
+
+              <img src={img_2.src} alt="random barcode" class="mx-auto pt-4" />
+
+              <Text>
+                *** This is just a random barcode for show ***
+              </Text>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-  </div>
-</div>
- <!----------------- Reserve table section-------------------->
-  <div class="w-full bg-accent-beige py-10">
- <Heading type="h2" stylingclasses="py-5 w-full px-20">RESERVE YOUR TABLE </Heading>
-  <div class="w-full px-20">
-  <Text>From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.</Text>
-  <Text>Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.</Text>
-  </div>
- <div class="flex justify-center mt-10">
-  <Button>MAKE A RESERVATION</Button>
-</div>
-  <img src={img_3.src} alt="Table illustration" class="w-100 mx-auto py-8" />
-</div>
-<!----------------- Reserve table section-------------------->
- <div class="bg-accent-green">
-<Heading type="h2" stylingclasses="py-5 w-full px-20 text-neutral-white pt-20">EVENTS AT BELMA </Heading>
-<Text stylingclasses="text-neutral-white px-20 mb-5">There’s always something happening at Belma. From special dinners and live music to seasonal gatherings and unique experiences, our events are created to bring people together and make every visit memorable. As part of our community, newsletter subscribers get early access to upcoming events, exclusive invitations, and first-hand updates before anyone else.</Text>
-<Text stylingclasses="text-neutral-white px-20 mb-10">Discover what’s coming next and be part of the Belma experience.</Text>
-<div class="flex justify-center pb-20">
-  <Button>SEE UPCOMING EVENTS</Button>
-</div>
-</div>
-<!----------------- Gallery section-------------------->
+    <!----------------- Community section -------------------->
+    <section class="w-full border-y border-primary px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-245">
+        <Heading type="h3" stylingclasses="pb-6">
+          Would you like to become part of our community?
+        </Heading>
+
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="space-y-5">
+            <Text>
+              From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.
+            </Text>
+
+            <Text>
+              Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.
+            </Text>
+          </div>
+
+          <form class="flex flex-col justify-center gap-4">
+            <input
+              type="email"
+              name="email"
+              placeholder="EMAIL ADDRESS"
+              class="w-full bg-cta p-3.5 text-sm font-bold text-neutral-black outline-none placeholder:text-neutral-black"
+            />
+
+            <Button>
+              SUBMIT
+            </Button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- Reserve table section -------------------->
+    <section class="w-full bg-accent-beige px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-245">
+        <Heading type="h2" stylingclasses="font-bold pb-6">
+          RESERVE YOUR TABLE
+        </Heading>
+
+        <div class="space-y-5">
+          <Text>
+            From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.
+          </Text>
+
+          <Text>
+            Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.
+          </Text>
+        </div>
+
+        <div class="mt-10 flex justify-center">
+          <Button href="/reservations" variant="primary">
+            MAKE A RESERVATION
+          </Button>
+        </div>
+
+        <img src={img_3.src} alt="Table illustration" class="mx-auto w-100 pt-10" />
+      </div>
+    </section>
+
+    <!----------------- Events section -------------------->
+    <section class="w-full bg-accent-green px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+      <div class="mx-auto max-w-245">
+        <Heading type="h2" stylingclasses="font-bold text-neutral-white pb-6">
+          EVENTS AT BELMA
+        </Heading>
+
+        <div class="space-y-5">
+          <Text stylingclasses="text-neutral-white">
+            There’s always something happening at Belma. From special dinners and live music to seasonal gatherings and unique experiences, our events are created to bring people together and make every visit memorable. As part of our community, newsletter subscribers get early access to upcoming events, exclusive invitations, and first-hand updates before anyone else.
+          </Text>
+
+          <Text stylingclasses="text-neutral-white">
+            Discover what’s coming next and be part of the Belma experience.
+          </Text>
+        </div>
+
+        <div class="mt-10 flex justify-center">
+          <Button href="/events" variant="primary">
+            SEE UPCOMING EVENTS
+          </Button>
+        </div>
+      </div>
+    </section>
+
+    <!----------------- Gallery section -------------------->
   </main>
 </Layout>
