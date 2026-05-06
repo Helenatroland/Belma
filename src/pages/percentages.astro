@@ -613,7 +613,7 @@ import Heading from '../components/heading.astro';
   
 
 <!-- script til skifte side mellem cards -->
-<script>
+<script is:inline>
   const cards = document.querySelectorAll("[data-card]");
   const count = document.querySelector("#card-count");
   const prev = document.querySelector("#prev-card");
