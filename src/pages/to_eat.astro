@@ -1,8 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Heading from '../components/heading.astro';
-import breakfast_menu from '../img/breakfast_menu.png';
-import food_menu from '../img/food_menu.png';
 ---
 
 <Layout title="To eat">
@@ -14,28 +12,225 @@ import food_menu from '../img/food_menu.png';
           NO. 1
         </Heading>
 
-        <img
-          src={breakfast_menu.src}
-          alt="Breakfast menu"
-          class="w-full"
-        />
+        <article class="bg-secondary px-8 py-10 text-primary shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+          <h2 class="font-space text-[24px] font-bold md:text-[28px]">
+            BREAKFAST
+          </h2>
+
+          <p class="mt-9 font-special text-[14px]">
+            Served from 09.00AM - 12.00PM
+          </p>
+
+          <div class="mt-8 space-y-4 font-special text-[16px]">
+            <div class="flex items-end gap-1">
+              <span>Croissant</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>35kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Cinnamonbun</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>35kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Bun with Gammelknas (Helges ost)</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>45kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span class="max-w-[310px]">
+                Youghurt with Chiaseedpudding, Granola and Berries
+              </span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>110kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Pancakes with Syrup & Berries</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>110kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Egg Benedicts</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>110kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Croque Monsieur</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>110kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Croque Madame</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>110kr</span>
+            </div>
+
+            <div class="pt-6">
+              <div class="flex items-end gap-1">
+                <span>Breakfast Plate</span>
+                <span class="mb-1 grow border-b border-dashed border-primary"></span>
+                <span>125kr</span>
+              </div>
+
+              <p class="mt-1 text-[13px] leading-tight">
+                Soft Boiled egg<br />
+                Ryebread with Gammelknas (Helges ost)<br />
+                Youghurt with Granola and Berries
+              </p>
+            </div>
+          </div>
+
+          <p class="pt-36 text-center font-special text-[34px] md:text-[40px]">
+            BREAKFAST
+          </p>
+        </article>
       </div>
     </section>
 
-<!-- section 2 -->
-<section class="w-full px-4 pt-8 pb-20 md:px-8 lg:px-12">
-  <div class="mx-auto w-full max-w-125">
-    <Heading type="h2" stylingclasses="pb-4">
-      NO. 2
-    </Heading>
+    <!-- section 2 -->
+    <section class="w-full px-4 pt-8 pb-20 md:px-8 lg:px-12">
+      <div class="mx-auto w-full max-w-125">
+        <Heading type="h2" stylingclasses="pb-4">
+          NO. 2
+        </Heading>
 
-    <img
-      src={food_menu.src}
-      alt="Food menu"
-      class="w-full"
-    />
-  </div>
-</section>
+        <article class="bg-secondary px-8 py-10 text-primary shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+          <h2 class="font-space text-[24px] font-bold md:text-[28px]">
+            TO EAT
+          </h2>
 
+          <p class="mt-9 font-special text-[14px]">
+            Served from 12.00PM - 10.00PM
+          </p>
+
+          <div class="mt-8 space-y-4 font-special text-[16px]">
+            <p class="pb-4">SANDWICHES</p>
+
+            <div class="flex items-end gap-1">
+              <span>jambon Beurre</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>95kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Jambon Grillé</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>125kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Tomate Grillé</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>125kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Parma Baguette</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>135kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Grilled Ventricina Focaccia</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>125kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Stratiatella Focaccia</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>125kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Tuna melt</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>125kr</span>
+            </div>
+
+            <p class="py-5">... all goods from Helges Ost</p>
+
+            <p class="pt-6 pb-4">POISSON</p>
+
+            <div class="flex items-end gap-1">
+              <span>Mussels Escabeche</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>135kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Sardines in Olive Oil</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>135kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Spiced Sardines</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>135kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Tuna in Chili</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>135kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Octopus Marinara</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>155kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Peppered Salmon</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>165kr</span>
+            </div>
+
+            <p class="pt-12 pb-4">SOUP</p>
+
+            <div class="flex items-end gap-1">
+              <span>Soup of the day</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>125kr</span>
+            </div>
+
+            <p class="pt-12 pb-4">SNACKS</p>
+
+            <div class="flex items-end gap-1">
+              <span>Roasted Almonds</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>45kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Green or Black Olives</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>45kr</span>
+            </div>
+
+            <div class="flex items-end gap-1">
+              <span>Kettle Chips</span>
+              <span class="mb-1 grow border-b border-dashed border-primary"></span>
+              <span>45kr</span>
+            </div>
+
+            <p class="pt-6">- Combine all 3 - 120kr -</p>
+          </div>
+
+          <p class="pt-24 font-special text-[34px] md:text-[40px]">
+            BAR BITES
+          </p>
+        </article>
+      </div>
+    </section>
   </main>
 </Layout>
