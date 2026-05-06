@@ -6,15 +6,15 @@ import Button from '../components/button.astro';
 import bottles_drawing from '../img/bottles_drawing.svg';
 ---
 
-<Layout title="Menu">
+<Layout title="About us">
   <main>
     <!-- section 1 -->
     <section class="w-full px-4 md:px-8 lg:px-12">
-      <Heading type="h1" stylingclasses="text-center pt-5 pb-24">
-        ABOUT US
-      </Heading>
+      <div class="mx-auto max-w-245">
+        <Heading type="h1" stylingclasses="text-center pt-5 pb-14">
+          ABOUT US
+        </Heading>
 
-      <div class="mx-auto max-w-342.5">
         <Text> 
           Belma is inspired by an unstoppable spirit, it’s a place for connection, laughter and memories. Cozy, lively and just the right touch of chaos. Sip, savor, and soak it all in.
 
@@ -39,20 +39,22 @@ import bottles_drawing from '../img/bottles_drawing.svg';
       </div>
     </section>
 
-    <div class="mt-20 flex w-full justify-end">
-      <img
-        src={bottles_drawing.src}
-        alt="Bottles drawing menu"
-        class="w-full max-w-55 md:max-w-70 lg:max-w-85"
-      />
-    </div>
-
     <!-- section 2 -->
-    <!-- BILLEDEGALLERI -->
+    <section class="w-full">
+      <div class="mt-20 flex w-full justify-end">
+        <img
+          src={bottles_drawing.src}
+          alt="Bottles drawing menu"
+          class="w-full max-w-55 md:max-w-70 lg:max-w-85"
+        />
+      </div>
+    </section>
 
-    <!-- section 3 -->
-    <section class="w-full px-4 md:px-8 lg:px-12">
-      <div class="mx-auto max-w-342.5">
+      <!-- section 3 MED GALLERI -->
+
+    <!-- section 4 -->
+    <section class="w-full px-4 pb-20 md:px-8 lg:px-12">
+      <div class="mx-auto max-w-245">
         <Heading type="h2" stylingclasses="font-bold pt-5 pb-6">
           Work With Us at Belma
         </Heading>
@@ -71,8 +73,10 @@ import bottles_drawing from '../img/bottles_drawing.svg';
           Explore career opportunities here.
         </Heading>
 
-        <div class="flex justify-center mb-10">
-          <Button href="/menu" variant="primary">READ MORE</Button>
+        <div class="flex justify-center">
+          <Button href="/were_hiring" variant="primary">
+            READ MORE
+          </Button>
         </div>
       </div>
     </section>

@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Heading from '../components/heading.astro';
+import Text from '../components/text.astro';
+import Button from '../components/button.astro';
+import dancing_man_drawing from '../img/dancing_man_drawing.svg';
+---
+
+<Layout title="Were hiring">
+  <main>
+    <!-- section 1 -->
+    <section class="w-full px-4 pb-24 md:px-8 md:pb-32 lg:px-12">
+      <div class="mx-auto max-w-245">
+        <Heading type="h1" stylingclasses="text-center pt-5 pb-14">
+          WANT TO JOIN OUR TEAM?
+        </Heading>
+
+        <Heading type="h2" stylingclasses="font-bold pt-5 pb-8">
+          Belma is hiring - experienced bartender, barista or waiter
+        </Heading>
+
+        <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+          <div class="w-full lg:max-w-162.5">
+            <Text> 
+              Istedgade, Vesterbro
+              <br />
+              <br />
+              We’re on the lookout for someone who knows what they’re doing - someone with solid experience behind the bar or on the floor, who brings presence, timing, and a good read on the room. :-)
+              <br />
+              <br />
+              Belma is lively, a little chaotic in the best way, and always full of people. So if you thrive in fast-paced, good-vibe settings, we’d love to hear from you!
+              <br />
+              <br />
+              You should:
+              <br />
+              Have relevant experience (cocktails, barista, or service)
+              <br />
+              Be confident, warm and quick on your feet
+              <br />
+              Know how to handle a rush - and still smile through it
+              <br />
+              Bring great energy to both guests and the team.
+            </Text>
+
+            <Heading type="h3" stylingclasses="font-medium pt-10 pb-10">
+              Think it’s a match?
+            </Heading>
+          </div>
+
+          <img
+  src={dancing_man_drawing.src}
+  alt="Dancing man illustration"
+  class="mx-auto w-full max-w-70 md:max-w-90 lg:mx-0 lg:-mr-56 lg:max-w-115"
+/>
+        </div>
+
+        <div class="flex w-full justify-center pt-4">
+          <Button variant="primary">
+            APPLY HERE
+          </Button>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
