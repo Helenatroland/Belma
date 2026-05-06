@@ -1,10 +1,13 @@
 ---
-// Tailwind styling for teksttype
 const sizeClasses = {
-  Text: "text-[16px] md:text-[17px] lg:text-[18px] font-outfit",
+  Text: "text-[14px] md:text-[15px] lg:text-[16px] font-outfit leading-relaxed",
 };
 
-interface Props { teksttype?: keyof typeof sizeClasses; stylingclasses?: string }
+interface Props {
+  teksttype?: keyof typeof sizeClasses;
+  stylingclasses?: string;
+}
+
 const { teksttype = "Text", stylingclasses = "" } = Astro.props as Props;
 ---
 
