@@ -29,9 +29,9 @@ import img_3 from '../img/img_3.svg';
       <div class="mx-auto max-w-245">
         <img src={img_1.src} alt="Belma interior" class="mx-auto w-100 pb-8" />
 
-        <Text stylingclasses="text-center">
-          At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. Whether you're starting your morning, taking a lunch break, or meeting friends in the evening, Belma is a place to stay all day.
-        </Text>
+       <Text stylingclasses="text-center">
+  At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. From slow mornings with fresh coffee and brunch, to relaxed lunches and cozy evenings with drinks and small bites, Belma is designed as a place to gather, unwind, and enjoy good company. Whether you're stopping by for a quick coffee or staying for the evening atmosphere, Belma is a space to feel at home all day long.
+</Text>
       </div>
     </section>
 
@@ -116,57 +116,69 @@ import img_3 from '../img/img_3.svg';
 
         <div class="grid gap-8 md:grid-cols-2">
           <div class="space-y-5">
-            <Text>
-              From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.
-            </Text>
-
-            <Text>
-              Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.
-            </Text>
+          <Text> 
+            Sign up for our newsletter and be the first to receive exclusive offers, early access to upcoming events, the latest news, special surprises, and all the great vibes from Belma. 
+            <br>
+            <br>
+            Stay connected and never miss out on what’s happening with us. 
+          </Text>
           </div>
 
-          <form class="flex flex-col justify-center gap-4">
-            <input
-              type="email"
-              name="email"
-              placeholder="EMAIL ADDRESS"
-              class="w-full bg-cta p-3.5 text-sm font-bold text-neutral-black outline-none placeholder:text-neutral-black"
-            />
+  <form class="flex flex-col items-center gap-4">
 
-            <Button>
-              SUBMIT
-            </Button>
-          </form>
+  <input
+    type="email"
+    placeholder="EMAIL ADDRESS"
+    class="bg-cta font-bold text-neutral-black p-3.5 text-sm md:w-100"
+  />
+
+  <Button stylingclasses="font-bold px-15">
+    SUBMIT
+  </Button>
+
+</form>
         </div>
       </div>
     </section>
 
-    <!----------------- Reserve table section -------------------->
-    <section class="w-full bg-accent-beige px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
-      <div class="mx-auto max-w-245">
-        <Heading type="h2" stylingclasses="font-bold pb-6">
-          RESERVE YOUR TABLE
-        </Heading>
+<!----------------- Reserve table section -------------------->
+<section class="w-full bg-accent-beige px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:pt-20 lg:pb-10">
+  <div class="mx-auto max-w-245">
+    
+    <Heading type="h2" stylingclasses="font-bold pb-6">
+      RESERVE YOUR TABLE
+    </Heading>
 
-        <div class="space-y-5">
-          <Text>
-            From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day. Whether you’re meeting friends, planning a date night, hosting colleagues, or simply treating yourself, we’re ready to welcome you.
-          </Text>
+    <div class="space-y-5">
+      <Text>
+        From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day.
+        <br>
+        Whether you’re meeting friends for coffee, planning a cozy date night, hosting colleagues after work, or simply taking a moment for yourself, our space is designed to feel welcoming from morning to night.
+        <br>
+        Book your table in advance and enjoy freshly made dishes, carefully crafted cocktails, selected wines, and the warm Belma atmosphere.
+        <br>
+        Whether it’s a casual visit or a special occasion, we look forward to creating a memorable experience for you.
+      </Text>
+    </div>
 
-          <Text>
-            Book your table in advance and let us set the scene with great food, crafted drinks, and the warm Belma atmosphere you know and love.
-          </Text>
-        </div>
+    <div class="mt-10 flex justify-center">
+      <Button
+        href="/reservations"
+        variant="primary"
+        stylingclasses="font-bold px-15"
+      >
+        MAKE A RESERVATION
+      </Button>
+    </div>
 
-        <div class="mt-10 flex justify-center">
-          <Button href="/reservations" variant="primary">
-            MAKE A RESERVATION
-          </Button>
-        </div>
+    <img
+      src={img_3.src}
+      alt="Table illustration"
+      class="ml-auto w-100 pt-10 md:pt-6 lg:w-120"
+    />
 
-        <img src={img_3.src} alt="Table illustration" class="mx-auto w-100 pt-10" />
-      </div>
-    </section>
+  </div>
+</section>
 
     <!----------------- Events section -------------------->
     <section class="w-full bg-accent-green px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
@@ -176,14 +188,17 @@ import img_3 from '../img/img_3.svg';
         </Heading>
 
         <div class="space-y-5">
-          <Text stylingclasses="text-neutral-white">
-            There’s always something happening at Belma. From special dinners and live music to seasonal gatherings and unique experiences, our events are created to bring people together and make every visit memorable. As part of our community, newsletter subscribers get early access to upcoming events, exclusive invitations, and first-hand updates before anyone else.
-          </Text>
-
-          <Text stylingclasses="text-neutral-white">
-            Discover what’s coming next and be part of the Belma experience.
-          </Text>
-        </div>
+  <Text stylingclasses="text-neutral-white">
+    There’s always something happening at Belma. 
+    <br>
+    From intimate dinners and live music to seasonal gatherings and special experiences, our events are designed to bring people together and create memorable moments in a warm and welcoming atmosphere. 
+    <br> 
+    As part of our community, newsletter subscribers receive early access to upcoming events, exclusive invitations, and first-hand updates before anyone else. 
+    <br>
+    <br>
+    Discover what’s coming next and become part of the Belma experience — where good food, great drinks, and meaningful moments come together.
+  </Text>
+</div>
 
         <div class="mt-10 flex justify-center">
           <Button href="/events" variant="primary">
