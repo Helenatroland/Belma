@@ -1,0 +1,31 @@
+---
+import Heading from "../components/heading.astro"
+import Text from "../components/text.astro"
+import Layout from "../layouts/Layout.astro"
+import events_1 from "../img/events_1.webp"
+import events_2 from "../img/events_2.webp"
+---
+<Layout>
+  <Heading type="h1" stylingclasses="text-center font-bold pb-10">UPCOMING EVENTS</Heading>
+  <Text stylingclasses="max-w-xl mx-auto text-left pb-10">
+  At Belma, we create experiences that bring people together. From live music and wine tastings to workshops, social gatherings, and special events. Discover new experiences, great atmosphere, and memorable moments with us.
+</Text>
+ 
+<div class="px-10 pb-10">
+  <img
+    src={events_1.src}
+    alt="Event poster"
+    class="block mx-auto w-full max-w-[600px]"
+  />
+</div>
+
+<div class="px-10 pb-10">
+  <img
+    src={events_2.src}
+    alt="Event poster"
+    class="block mx-auto w-full max-w-[600px]"
+  />
+</div>
+
+
+  </Layout>
