@@ -1,6 +1,6 @@
 ---
 import Heading from "./heading.astro";
-import logo from "../img/logo_belma.svg";
+import logo from "../img/logo_new.svg";
 
 const navItems = [
   { label: "MENU", href: "/menu" },
@@ -11,7 +11,7 @@ const navItems = [
 ---
 
 <header class="w-full pb-3 md:pb-4 lg:pb-5">
-  <div class="w-full border-[1.5px] border-primary px-4 pt-4 pb-3 md:flex md:min-h-23 md:items-center md:justify-between md:gap-8 md:px-8 md:pt-5 md:pb-4 lg:min-h-29.5 lg:pl-17.5 lg:pr-28 lg:pt-6 lg:pb-4">
+  <div class="w-full border-2 border-primary px-4 pt-4 pb-3 md:flex md:min-h-23 md:items-center md:justify-between md:gap-8 md:px-8 md:pt-5 md:pb-4 lg:min-h-29.5 lg:pl-17.5 lg:pr-28 lg:pt-6 lg:pb-4">
     <div class="flex items-center justify-between">
       <a href="/" aria-label="Belma forside" class="shrink-0">
         <img
@@ -45,7 +45,7 @@ const navItems = [
           <li>
             <a
               href={item.href}
-              class="block text-secondary transition-colors hover:text-primary"
+              class="block text-primary transition-colors hover:text-secondary"
             >
               <Heading type="labelLarge" stylingclasses="leading-none">
                 {item.label}
