@@ -2,30 +2,208 @@
 import Heading from "../components/heading.astro"
 import Text from "../components/text.astro"
 import Layout from "../layouts/Layout.astro"
-import events_1 from "../img/events_1.webp"
 import events_2 from "../img/events_2.webp"
+import sax from "../img/sax.svg"
+import hot_cup from "../img/hot_cup.svg"
+import disco from "../img/disco.svg"
 ---
+
 <Layout>
-  <Heading type="h1" stylingclasses="text-center font-bold pb-10">UPCOMING EVENTS</Heading>
-  <Text stylingclasses="max-w-xl mx-auto text-left pb-10">
-  At Belma, we create experiences that bring people together. From live music and wine tastings to workshops, social gatherings, and special events. Discover new experiences, great atmosphere, and memorable moments with us.
-</Text>
- 
-<div class="px-10 pb-10">
-  <img
-    src={events_1.src}
-    alt="Event poster"
-    class="block mx-auto w-full max-w-[600px]"
-  />
-</div>
+  <main>
+    <!-- section 1 -->
+    <section class="w-full px-4 md:px-8 lg:px-12">
+      <div class="mx-auto max-w-245">
+        <Heading type="h1" stylingclasses="text-center pt-5 pb-14">
+          UPCOMING EVENTS
+        </Heading>
 
-<div class="px-10 pb-10">
-  <img
-    src={events_2.src}
-    alt="Event poster"
-    class="block mx-auto w-full max-w-[600px]"
-  />
-</div>
+        <Text>
+          At Belma, we create experiences that bring people together throughout the month. From live music and wine tastings to creative workshops, morning gatherings, social events, and special evenings, our calendar is made for both familiar faces and new guests. Whether you are joining us for a relaxed drink, a shared meal, a new activity, or a memorable night out, each event is designed with good atmosphere, warm hospitality, and meaningful moments at the centre.
+        </Text>
+      </div>
+    </section>
 
+    <!-- section 2 -->
+    <section class="w-full px-4 pt-12 pb-20 md:px-8 lg:px-12">
+      <div class="mx-auto max-w-210 bg-accent-green text-accent-beige">
+        <div class="py-8 md:py-10">
+          <Heading
+            type="graphic"
+            stylingclasses="block text-center text-[58px] leading-none md:text-[82px] lg:text-[105px]"
+          >
+            JUNE
+          </Heading>
+        </div>
 
-  </Layout>
+        <!-- event 1 -->
+        <div class="relative grid min-h-62 grid-cols-[90px_1fr_70px] items-center gap-4 border-b-4 border-dashed border-accent-beige px-4 py-8 md:min-h-66 md:grid-cols-[160px_1fr_130px] md:px-8">
+          <p class="font-abril text-[85px] leading-none md:text-[135px]">
+            06
+          </p>
+
+          <div class="relative z-10">
+            <Heading type="graphic" stylingclasses="block pb-8">
+              Jazz & drinks night
+            </Heading>
+
+            <ul class="list-disc pl-5 font-special text-[13px] leading-tight md:text-[16px]">
+              <li>Live jazz performance</li>
+              <li>Signature cocktails & wine</li>
+              <li>Relaxed lounge atmosphere</li>
+            </ul>
+
+            <p class="pt-5 font-special text-[13px] leading-tight md:text-[16px]">
+              Time: 20:00<br />
+              Price: Free entry
+            </p>
+          </div>
+
+          <p class="relative z-10 self-start pt-3 font-space text-[34px] leading-none md:text-[48px]">
+            SAT
+          </p>
+
+          <img
+            src={sax.src}
+            alt=""
+            class="absolute right-14 top-14 hidden w-48 rotate-[-10deg] opacity-95 md:block lg:right-22 lg:w-64"
+          />
+        </div>
+
+        <!-- event 2 -->
+        <div class="relative grid min-h-62 grid-cols-[90px_1fr_70px] items-center gap-4 border-b-4 border-dashed border-accent-beige px-4 py-8 md:min-h-66 md:grid-cols-[160px_1fr_130px] md:px-8">
+          <p class="font-abril text-[85px] leading-none md:text-[135px]">
+            14
+          </p>
+
+          <div class="relative z-10">
+            <Heading type="graphic" stylingclasses="block pb-8">
+              Morning Run Club & Breakfast
+            </Heading>
+
+            <ul class="list-disc pl-5 font-special text-[13px] leading-tight md:text-[16px]">
+              <li>5 km easy-paced group run</li>
+              <li>Open to all levels</li>
+              <li>Finishes at Belma, where participants can optionally buy breakfast</li>
+            </ul>
+
+            <p class="pt-5 font-special text-[13px] leading-tight md:text-[16px]">
+              Time: 10:00<br />
+              Price: Free entry, breakfast can be purchased after the run
+            </p>
+          </div>
+
+          <p class="relative z-10 self-start pt-3 font-space text-[34px] leading-none md:text-[48px]">
+            SUN
+          </p>
+        </div>
+
+        <!-- event 3 -->
+        <div class="relative grid min-h-62 grid-cols-[90px_1fr_70px] items-center gap-4 border-b-4 border-dashed border-accent-beige px-4 py-8 md:min-h-66 md:grid-cols-[160px_1fr_130px] md:px-8">
+          <p class="font-abril text-[85px] leading-none md:text-[135px]">
+            21
+          </p>
+
+          <div class="relative z-10">
+            <Heading type="graphic" stylingclasses="block pb-8">
+              Barista for a Morning - Coffee Experience
+            </Heading>
+
+            <ul class="list-disc pl-5 font-special text-[13px] leading-tight md:text-[16px]">
+              <li>One-day workshop</li>
+              <li>Learn how to make espresso and latte art</li>
+              <li>Includes coffee + a croissant</li>
+            </ul>
+
+            <p class="pt-5 font-special text-[13px] leading-tight md:text-[16px]">
+              Time: 10:00-12:00<br />
+              Price: 350 DKK per person
+            </p>
+          </div>
+
+          <p class="relative z-10 self-start pt-3 font-space text-[34px] leading-none md:text-[48px]">
+            SUN
+          </p>
+
+          <img
+            src={hot_cup.src}
+            alt=""
+            class="absolute right-22 bottom-8 hidden w-32 rotate-[8deg] opacity-95 md:block lg:right-34 lg:w-42"
+          />
+        </div>
+
+        <!-- event 4 -->
+        <div class="relative grid min-h-62 grid-cols-[90px_1fr_70px] items-center gap-4 border-b-4 border-dashed border-accent-beige px-4 py-8 md:min-h-66 md:grid-cols-[160px_1fr_130px] md:px-8">
+          <p class="font-abril text-[85px] leading-none md:text-[135px]">
+            25
+          </p>
+
+          <div class="relative z-10">
+            <Heading type="graphic" stylingclasses="block pb-8">
+              Belma Wine Tasting Evening
+            </Heading>
+
+            <ul class="list-disc pl-5 font-special text-[13px] leading-tight md:text-[16px]">
+              <li>Guided tasting of different wines</li>
+              <li>Introduction to flavors, regions, and styles</li>
+              <li>Social bar atmosphere</li>
+            </ul>
+
+            <p class="pt-5 font-special text-[13px] leading-tight md:text-[16px]">
+              Time: 19:00<br />
+              Price: 350 DKK per person
+            </p>
+          </div>
+
+          <p class="relative z-10 self-start pt-3 font-space text-[34px] leading-none md:text-[48px]">
+            THU
+          </p>
+        </div>
+
+        <!-- event 5 -->
+        <div class="relative grid min-h-62 grid-cols-[90px_1fr_70px] items-center gap-4 px-4 py-8 md:min-h-66 md:grid-cols-[160px_1fr_130px] md:px-8">
+          <p class="font-abril text-[85px] leading-none md:text-[135px]">
+            27
+          </p>
+
+          <div class="relative z-10">
+            <Heading type="graphic" stylingclasses="block pb-8">
+              Belma Lunch & Comedy Talk
+            </Heading>
+
+            <ul class="list-disc pl-5 font-special text-[13px] leading-tight md:text-[16px]">
+              <li>Curated lunch included</li>
+              <li>Live stand-up comedy performance</li>
+              <li>Intimate and relaxed atmosphere</li>
+            </ul>
+
+            <p class="pt-5 font-special text-[13px] leading-tight md:text-[16px]">
+              Time: 13:00-15:00<br />
+              Price: 400 DKK per person
+            </p>
+          </div>
+
+          <p class="relative z-10 self-start pt-3 font-space text-[34px] leading-none md:text-[48px]">
+            SAT
+          </p>
+
+          <img
+            src={disco.src}
+            alt=""
+            class="absolute right-10 bottom-2 hidden w-52 rotate-6 opacity-95 md:block lg:right-20 lg:w-68"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="w-full px-4 pb-32 md:px-8 lg:px-12">
+      <div class="mx-auto max-w-210">
+        <img
+          src={events_2.src}
+          alt="Event poster"
+          class="block w-full"
+        />
+      </div>
+    </section>
+  </main>
+</Layout>
