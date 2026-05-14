@@ -18,7 +18,7 @@ import gallery_6 from '../img/gallery_6.webp';
 <Layout>
   <main>
     <!----------------- Hero section -------------------->
-    <section class="w-full px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+    <section class="w-full px-4 pt-20 pb-14 md:px-8 md:pt-24 md:pb-16 lg:px-12 lg:pt-28 lg:pb-20">
       <div class="mx-auto max-w-245 text-center">
         <img src={logo.src} alt="Belma logo" class="mx-auto w-100" />
 
@@ -35,9 +35,9 @@ import gallery_6 from '../img/gallery_6.webp';
       <div class="mx-auto max-w-245">
         <img src={img_1.src} alt="Belma interior" class="mx-auto w-100 pb-8" />
 
-       <Text stylingclasses="text-center">
-  At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. From slow mornings with fresh coffee and brunch, to relaxed lunches and cozy evenings with drinks and small bites, Belma is designed as a place to gather, unwind, and enjoy good company. Whether you're stopping by for a quick coffee or staying for the evening atmosphere, Belma is a space to feel at home all day long.
-</Text>
+        <Text stylingclasses="text-center">
+          At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. From slow mornings with fresh coffee and brunch, to relaxed lunches and cozy evenings with drinks and small bites, Belma is designed as a place to gather, unwind, and enjoy good company. Whether you're stopping by for a quick coffee or staying for the evening atmosphere, Belma is a space to feel at home all day long.
+        </Text>
       </div>
     </section>
 
@@ -122,69 +122,67 @@ import gallery_6 from '../img/gallery_6.webp';
 
         <div class="grid gap-8 md:grid-cols-2">
           <div class="space-y-5">
-          <Text> 
-            Sign up for our newsletter and be the first to receive exclusive offers, early access to upcoming events, the latest news, special surprises, and all the great vibes from Belma. 
-            <br>
-            <br>
-            Stay connected and never miss out on what’s happening with us. 
-          </Text>
+            <Text> 
+              Sign up for our newsletter and be the first to receive exclusive offers, early access to upcoming events, the latest news, special surprises, and all the great vibes from Belma. 
+              <br>
+              <br>
+              Stay connected and never miss out on what’s happening with us. 
+            </Text>
           </div>
 
-  <form class="flex flex-col items-center gap-4">
+          <form class="flex flex-col items-center gap-4">
+            <input
+              type="email"
+              placeholder="EMAIL ADDRESS"
+              class="bg-cta font-bold text-neutral-black p-3.5 text-sm md:w-100"
+            />
 
-  <input
-    type="email"
-    placeholder="EMAIL ADDRESS"
-    class="bg-cta font-bold text-neutral-black p-3.5 text-sm md:w-100"
-  />
-
-  <Button stylingclasses="font-bold px-15">
-    SUBMIT
-  </Button>
-
-</form>
+            <Button stylingclasses="font-bold px-15">
+              SUBMIT
+            </Button>
+          </form>
         </div>
       </div>
     </section>
 
-<!----------------- Reserve table section -------------------->
-<section class="w-full bg-accent-beige px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:pt-20 lg:pb-10">
-  <div class="mx-auto max-w-245">
-    
-    <Heading type="h2" stylingclasses="font-bold pb-6">
-      RESERVE YOUR TABLE
-    </Heading>
+    <!----------------- Reserve table section -------------------->
+    <section class="w-full bg-accent-beige px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:pt-20 lg:pb-10">
+      <div class="mx-auto max-w-245">
 
-    <div class="space-y-5">
-      <Text>
-        From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day.
-        <br>
-        Whether you’re meeting friends for coffee, planning a cozy date night, hosting colleagues after work, or simply taking a moment for yourself, our space is designed to feel welcoming from morning to night.
-        <br>
-        Book your table in advance and enjoy freshly made dishes, carefully crafted cocktails, selected wines, and the warm Belma atmosphere.
-        <br>
-        Whether it’s a casual visit or a special occasion, we look forward to creating a memorable experience for you.
-      </Text>
-    </div>
+        <Heading type="h2" stylingclasses="font-bold pb-6">
+          RESERVE YOUR TABLE
+        </Heading>
 
-    <div class="mt-10 flex justify-center">
-      <Button
-        href="/reservations"
-        variant="primary"
-        stylingclasses="font-bold px-15"
-      >
-        MAKE A RESERVATION
-      </Button>
-    </div>
+        <div class="space-y-5">
+          <Text>
+            From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day.
+            <br>
+            Whether you’re meeting friends for coffee, planning a cozy date night, hosting colleagues after work, or simply taking a moment for yourself, our space is designed to feel welcoming from morning to night.
+            <br>
+            Book your table in advance and enjoy freshly made dishes, carefully crafted cocktails, selected wines, and the warm Belma atmosphere.
+            <br>
+            Whether it’s a casual visit or a special occasion, we look forward to creating a memorable experience for you.
+          </Text>
+        </div>
 
-    <img
-      src={img_3.src}
-      alt="Table illustration"
-      class="ml-auto w-100 pt-10 md:pt-6 lg:w-120"
-    />
+        <div class="mt-10 flex justify-center">
+          <Button
+            href="/reservations"
+            variant="primary"
+            stylingclasses="font-bold px-15"
+          >
+            MAKE A RESERVATION
+          </Button>
+        </div>
 
-  </div>
-</section>
+        <img
+          src={img_3.src}
+          alt="Table illustration"
+          class="ml-auto w-100 pt-10 md:pt-6 lg:w-120"
+        />
+
+      </div>
+    </section>
 
     <!----------------- Events section -------------------->
     <section class="w-full bg-accent-green px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
@@ -194,17 +192,17 @@ import gallery_6 from '../img/gallery_6.webp';
         </Heading>
 
         <div class="space-y-5">
-  <Text stylingclasses="text-neutral-white">
-    There’s always something happening at Belma. 
-    <br>
-    From intimate dinners and live music to seasonal gatherings and special experiences, our events are designed to bring people together and create memorable moments in a warm and welcoming atmosphere. 
-    <br> 
-    As part of our community, newsletter subscribers receive early access to upcoming events, exclusive invitations, and first-hand updates before anyone else. 
-    <br>
-    <br>
-    Discover what’s coming next and become part of the Belma experience — where good food, great drinks, and meaningful moments come together.
-  </Text>
-</div>
+          <Text stylingclasses="text-neutral-white">
+            There’s always something happening at Belma. 
+            <br>
+            From intimate dinners and live music to seasonal gatherings and special experiences, our events are designed to bring people together and create memorable moments in a warm and welcoming atmosphere. 
+            <br> 
+            As part of our community, newsletter subscribers receive early access to upcoming events, exclusive invitations, and first-hand updates before anyone else. 
+            <br>
+            <br>
+            Discover what’s coming next and become part of the Belma experience — where good food, great drinks, and meaningful moments come together.
+          </Text>
+        </div>
 
         <div class="mt-10 flex justify-center">
           <Button href="/events" variant="primary">
@@ -214,46 +212,46 @@ import gallery_6 from '../img/gallery_6.webp';
       </div>
     </section>
 
-<!----------------- Gallery section -------------------->
-<section class="w-full px-4 pt-14 pb-28 md:px-8 md:pt-16 md:pb-32 lg:px-12 lg:pt-20 lg:pb-40">
-  <div class="mx-auto grid max-w-245 grid-cols-2 gap-4 md:h-[640px] md:grid-cols-6 md:grid-rows-3">
-    <img
-      src={gallery_1.src}
-      alt="Belma food and drinks"
-      class="h-full w-full object-cover md:col-span-2 md:row-span-2"
-    />
+    <!----------------- Gallery section -------------------->
+    <section class="w-full px-4 pt-14 pb-32 md:px-8 md:pt-16 md:pb-40 lg:px-12 lg:pt-20 lg:pb-48">
+      <div class="mx-auto grid max-w-245 grid-cols-2 gap-4 md:h-[640px] md:grid-cols-6 md:grid-rows-3">
+        <img
+          src={gallery_1.src}
+          alt="Belma food and drinks"
+          class="h-full w-full object-cover md:col-span-2 md:row-span-2"
+        />
 
-    <img
-      src={gallery_2.src}
-      alt="Belma outdoor seating"
-      class="h-full w-full object-cover md:col-span-4 md:row-span-1"
-    />
+        <img
+          src={gallery_2.src}
+          alt="Belma outdoor seating"
+          class="h-full w-full object-cover md:col-span-4 md:row-span-1"
+        />
 
-    <img
-      src={gallery_3.src}
-      alt="Belma bar"
-      class="h-full w-full object-cover md:col-span-2 md:row-span-1"
-    />
+        <img
+          src={gallery_3.src}
+          alt="Belma bar"
+          class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+        />
 
-    <img
-      src={gallery_4.src}
-      alt="Belma drinks"
-      class="h-full w-full object-cover md:col-span-2 md:row-span-2"
-    />
+        <img
+          src={gallery_4.src}
+          alt="Belma drinks"
+          class="h-full w-full object-cover md:col-span-2 md:row-span-2"
+        />
 
-    <img
-      src={gallery_5.src}
-      alt="Belma live music"
-      class="h-full w-full object-cover md:col-span-2 md:row-span-1"
-    />
+        <img
+          src={gallery_5.src}
+          alt="Belma live music"
+          class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+        />
 
-    <img
-      src={gallery_6.src}
-      alt="Belma interior"
-      class="h-full w-full object-cover md:col-span-2 md:row-span-1"
-    />
-  </div>
-</section>
+        <img
+          src={gallery_6.src}
+          alt="Belma interior"
+          class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+        />
+      </div>
+    </section>
 
   </main>
 </Layout>
