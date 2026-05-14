@@ -2,10 +2,17 @@
 import Heading from "../components/heading.astro"
 import Text from "../components/text.astro"
 import Layout from "../layouts/Layout.astro"
-import events_2 from "../img/events_2.webp"
 import sax from "../img/sax.svg"
 import hot_cup from "../img/hot_cup.svg"
 import disco from "../img/disco.svg"
+import ussel_1 from "../img/ussel_1.webp"
+import ussel_2 from "../img/ussel_2.webp"
+import ussel_3 from "../img/ussel_3.webp"
+import ussel_4 from "../img/ussel_4.webp"
+import ussel_5 from "../img/ussel_5.webp"
+import ussel_6 from "../img/ussel_6.webp"
+import events_1 from "../img/events_1.webp"
+import events_2 from "../img/events_2.webp"
 ---
 
 <Layout>
@@ -13,7 +20,7 @@ import disco from "../img/disco.svg"
     <!-- section 1 -->
     <section class="w-full px-4 md:px-8 lg:px-12">
       <div class="mx-auto max-w-245">
-        <Heading type="h1" stylingclasses="text-center pt-5 pb-14">
+        <Heading type="h1" stylingclasses="text-center pt-12 md:pt-16 pb-14">
           UPCOMING EVENTS
         </Heading>
 
@@ -24,7 +31,7 @@ import disco from "../img/disco.svg"
     </section>
 
     <!-- section 2 -->
-    <section class="w-full px-4 pt-12 pb-20 md:px-8 lg:px-12">
+    <section class="w-full px-4 pt-12 pb-28 md:px-8 md:pb-36 lg:px-12">
       <div class="mx-auto max-w-210 bg-accent-green text-accent-beige">
         <div class="py-8 md:py-10">
           <Heading
@@ -196,14 +203,97 @@ import disco from "../img/disco.svg"
     </section>
 
     <!-- section 3 -->
-    <section class="w-full px-4 pb-32 md:px-8 lg:px-12">
-      <div class="mx-auto max-w-210">
-        <img
-          src={events_2.src}
-          alt="Event poster"
-          class="block w-full"
-        />
+    <section class="mb-20 w-full border-2 border-primary px-4 py-20 pb-20 md:mb-28 md:px-8 md:pb-24 lg:px-12 lg:pb-28">
+
+      <div class="mx-auto max-w-245">
+        <Heading type="h2" stylingclasses="font-bold text-center pt-5 pb-14">
+          PREVIOUS EVENTS
+        </Heading>
+
+        <Text>
+          We truly love hosting events at Belma - but what makes them even more special is seeing how much you love being part of them too. Over time, our events have grown into moments where people come together to connect, relax, celebrate, and create new memories in a warm and welcoming atmosphere.
+
+          <br /><br />
+
+          From intimate wine tastings and live music evenings to creative workshops, social gatherings, seasonal celebrations, and cozy community moments, every event reflects the spirit of Belma: bringing people together through good energy, beautiful surroundings, and shared experiences. Whether guests arrive with friends, colleagues, family, or simply on their own, we always aim to create a space where everyone feels welcome.
+
+          <br /><br />
+
+          Here you can take a look back at some of our previous events and get a glimpse of the atmosphere, people, and memorable moments that have filled our space over time.
+        </Text>
+
+        <Heading type="h3" stylingclasses="font-medium pt-14 pb-6">
+          USSEL - 07.05.2026
+        </Heading>
+
+        <Text>
+          On May 7th, the artist Ussel and his band stopped by Belma for an unforgettable rooftop concert. The streets were filled with people, music, great energy, and cold beers as guests gathered to enjoy a lively evening under the open sky.
+        </Text>
+
+        <div class="mt-12 columns-3 gap-2 md:gap-4">
+          <img
+            src={ussel_1.src}
+            alt="Ussel event at Belma"
+            class="mb-2 w-full break-inside-avoid md:mb-4"
+          />
+
+          <img
+            src={ussel_4.src}
+            alt="Guests outside Belma"
+            class="mb-2 w-full break-inside-avoid md:mb-4"
+          />
+
+          <img
+            src={ussel_2.src}
+            alt="Ussel event menu at Belma"
+            class="mb-2 w-full break-inside-avoid md:mb-4"
+          />
+
+          <img
+            src={ussel_5.src}
+            alt="Crowd at Ussel event"
+            class="mt-7 mb-2 w-full break-inside-avoid md:mt-14 md:mb-4"
+          />
+
+          <img
+            src={ussel_3.src}
+            alt="Ussel rooftop concert at Belma"
+            class="mb-2 w-full break-inside-avoid md:mb-4"
+          />
+
+          <div class="mt-0 mb-2 h-48 w-full overflow-hidden break-inside-avoid md:mt-4 md:mb-4 md:h-100">
+            <img
+              src={ussel_6.src}
+              alt="Ussel performing at Belma"
+              class="w-full"
+            />
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- section 4 -->
+    <section class="w-full px-4 pb-32 md:px-8 md:pb-40 lg:px-12 lg:pb-48">
+      <div class="mx-auto max-w-245">
+        <Heading type="h2" stylingclasses="font-bold text-center pt-5 pb-14">
+          SEE YOU AT OUR NEXT EVENT!
+        </Heading>
+
+        <div class="grid grid-cols-2 gap-4">
+          <img
+            src={events_1.src}
+            alt="Upcoming event poster"
+            class="block w-full"
+          />
+
+          <img
+            src={events_2.src}
+            alt="Upcoming event poster"
+            class="block w-full"
+          />
+        </div>
+      </div>
+    </section>
+
   </main>
 </Layout>
