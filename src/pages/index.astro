@@ -7,6 +7,12 @@ import img_1 from '../img/img_1.png';
 import logo from '../img/logo_new.svg';
 import img_2 from '../img/img_2.png';
 import img_3 from '../img/img_3.svg';
+import gallery_1 from '../img/gallery_1.webp';
+import gallery_2 from '../img/gallery_2.webp';
+import gallery_3 from '../img/gallery_3.webp';
+import gallery_4 from '../img/gallery_4.webp';
+import gallery_5 from '../img/gallery_5.webp';
+import gallery_6 from '../img/gallery_6.webp';
 ---
 
 <Layout>
@@ -208,6 +214,46 @@ import img_3 from '../img/img_3.svg';
       </div>
     </section>
 
-    <!----------------- Gallery section -------------------->
+<!----------------- Gallery section -------------------->
+<section class="w-full px-4 pt-14 pb-28 md:px-8 md:pt-16 md:pb-32 lg:px-12 lg:pt-20 lg:pb-40">
+  <div class="mx-auto grid max-w-245 grid-cols-2 gap-4 md:h-[640px] md:grid-cols-6 md:grid-rows-3">
+    <img
+      src={gallery_1.src}
+      alt="Belma food and drinks"
+      class="h-full w-full object-cover md:col-span-2 md:row-span-2"
+    />
+
+    <img
+      src={gallery_2.src}
+      alt="Belma outdoor seating"
+      class="h-full w-full object-cover md:col-span-4 md:row-span-1"
+    />
+
+    <img
+      src={gallery_3.src}
+      alt="Belma bar"
+      class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+    />
+
+    <img
+      src={gallery_4.src}
+      alt="Belma drinks"
+      class="h-full w-full object-cover md:col-span-2 md:row-span-2"
+    />
+
+    <img
+      src={gallery_5.src}
+      alt="Belma live music"
+      class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+    />
+
+    <img
+      src={gallery_6.src}
+      alt="Belma interior"
+      class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+    />
+  </div>
+</section>
+
   </main>
 </Layout>
