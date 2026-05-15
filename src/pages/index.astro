@@ -7,6 +7,7 @@ import img_1 from '../img/img_1.png';
 import logo from '../img/logo_new.svg';
 import img_2 from '../img/img_2.png';
 import img_3 from '../img/img_3.svg';
+import disco from '../img/disco.svg';
 import gallery_1 from '../img/gallery_1.webp';
 import gallery_2 from '../img/gallery_2.webp';
 import gallery_3 from '../img/gallery_3.webp';
@@ -17,7 +18,7 @@ import gallery_6 from '../img/gallery_6.webp';
 <title>Home</title>
 <Layout>
   <main>
-    <!----------------- Hero section -------------------->
+      <!-- section 1 -->
     <section class="w-full px-4 pt-20 pb-14 md:px-8 md:pt-24 md:pb-16 lg:px-12 lg:pt-28 lg:pb-20">
       <div class="mx-auto max-w-245 text-center">
         <img src={logo.src} alt="Belma logo" class="mx-auto w-100" />
@@ -30,7 +31,7 @@ import gallery_6 from '../img/gallery_6.webp';
       </div>
     </section>
 
-    <!----------------- Your go to spot section -------------------->
+    <!-- section 2 -->
     <section class="w-full bg-secondary px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
       <div class="mx-auto max-w-245">
         <img src={img_1.src} alt="Belma interior" class="mx-auto w-100 pb-8" />
@@ -41,7 +42,7 @@ import gallery_6 from '../img/gallery_6.webp';
       </div>
     </section>
 
-    <!----------------- Opening hours section -------------------->
+    <!-- section 3 -->
     <section class="w-full px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
       <div class="mx-auto max-w-245">
         <Heading type="h2" stylingclasses="text-center font-bold pb-10">
@@ -113,7 +114,7 @@ import gallery_6 from '../img/gallery_6.webp';
       </div>
     </section>
 
-    <!----------------- Community section -------------------->
+    <!-- section 4 -->
     <section class="w-full border-y border-primary px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
       <div class="mx-auto max-w-245">
         <Heading type="h3" stylingclasses="pb-6">
@@ -145,7 +146,7 @@ import gallery_6 from '../img/gallery_6.webp';
       </div>
     </section>
 
-    <!----------------- Reserve table section -------------------->
+    <!-- section 5 -->
     <section class="w-full bg-accent-beige px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:pt-20 lg:pb-10">
       <div class="mx-auto max-w-245">
 
@@ -184,37 +185,45 @@ import gallery_6 from '../img/gallery_6.webp';
       </div>
     </section>
 
-    <!----------------- Events section -------------------->
-    <section class="w-full bg-accent-green px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
-      <div class="mx-auto max-w-245">
-        <Heading type="h2" stylingclasses="font-bold text-neutral-white pb-6">
-          EVENTS AT BELMA
-        </Heading>
+    <!-- section 6 -->
+<section class="w-full bg-accent-green px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+  <div class="relative mx-auto max-w-245 overflow-hidden">
 
-        <div class="space-y-5">
-          <Text stylingclasses="text-neutral-white">
-            There’s always something happening at Belma. 
-            <br>
-            From intimate dinners and live music to seasonal gatherings and special experiences, our events are designed to bring people together and create memorable moments in a warm and welcoming atmosphere. 
-            <br> 
-            As part of our community, newsletter subscribers receive early access to upcoming events, exclusive invitations, and first-hand updates before anyone else. 
-            <br>
-            <br>
-            Discover what’s coming next and become part of the Belma experience — where good food, great drinks, and meaningful moments come together.
-          </Text>
-        </div>
+    <img
+      src={disco.src}
+      alt="Disco illustration"
+      class="absolute -right-6 -top-6 w-40 md:-right-10 md:-top-8 md:w-52 lg:-right-14 lg:w-64"
+    />
 
-        <div class="mt-10 flex justify-center">
-          <Button href="/events" variant="primary">
-            SEE UPCOMING EVENTS
-          </Button>
-        </div>
-      </div>
-    </section>
+    <Heading type="h2" stylingclasses="font-bold text-neutral-white pb-6 pr-24 md:pr-40 lg:pr-52">
+      EVENTS AT BELMA
+    </Heading>
 
-    <!----------------- Gallery section -------------------->
+    <div class="max-w-180 space-y-5">
+      <Text stylingclasses="text-neutral-white">
+        There’s always something happening at Belma. 
+        <br>
+        From intimate dinners and live music to seasonal gatherings and special experiences, our events are designed to bring people together and create memorable moments in a warm and welcoming atmosphere. 
+        <br> 
+        As part of our community, newsletter subscribers receive early access to upcoming events, exclusive invitations, and first-hand updates before anyone else. 
+        <br>
+        <br>
+        Discover what’s coming next and become part of the Belma experience — where good food, great drinks, and meaningful moments come together.
+      </Text>
+    </div>
+
+    <div class="mt-10 flex justify-center">
+      <Button href="/events" variant="primary">
+        SEE UPCOMING EVENTS
+      </Button>
+    </div>
+
+  </div>
+</section>
+
+    <!-- section 7 med galleri-->
     <section class="w-full px-4 pt-14 pb-32 md:px-8 md:pt-16 md:pb-40 lg:px-12 lg:pt-20 lg:pb-48">
-      <div class="mx-auto grid max-w-245 grid-cols-2 gap-4 md:h-[640px] md:grid-cols-6 md:grid-rows-3">
+      <div class="mx-auto grid max-w-245 grid-cols-2 gap-4 md:h-160 md:grid-cols-6 md:grid-rows-3">
         <img
           src={gallery_1.src}
           alt="Belma food and drinks"

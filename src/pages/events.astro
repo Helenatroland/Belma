@@ -229,47 +229,22 @@ import events_2 from "../img/events_2.webp"
         <Text>
           On May 7th, the artist Ussel and his band stopped by Belma for an unforgettable rooftop concert. The streets were filled with people, music, great energy, and cold beers as guests gathered to enjoy a lively evening under the open sky.
         </Text>
+      </div>
 
-        <div class="mt-12 columns-3 gap-2 md:gap-4">
-          <img
-            src={ussel_1.src}
-            alt="Ussel event at Belma"
-            class="mb-2 w-full break-inside-avoid md:mb-4"
-          />
-
-          <img
-            src={ussel_4.src}
-            alt="Guests outside Belma"
-            class="mb-2 w-full break-inside-avoid md:mb-4"
-          />
-
-          <img
-            src={ussel_2.src}
-            alt="Ussel event menu at Belma"
-            class="mb-2 w-full break-inside-avoid md:mb-4"
-          />
-
-          <img
-            src={ussel_5.src}
-            alt="Crowd at Ussel event"
-            class="mt-7 mb-2 w-full break-inside-avoid md:mt-14 md:mb-4"
-          />
-
-          <img
-            src={ussel_3.src}
-            alt="Ussel rooftop concert at Belma"
-            class="mb-2 w-full break-inside-avoid md:mb-4"
-          />
-
-          <div class="mt-0 mb-2 h-48 w-full overflow-hidden break-inside-avoid md:mt-4 md:mb-4 md:h-100">
-            <img
-              src={ussel_6.src}
-              alt="Ussel performing at Belma"
-              class="w-full"
-            />
+      <!-- gallery -->
+      <div class="py-16">
+        <div class="mx-auto max-w-245">
+          <div class="gallery-scroll flex gap-5 overflow-x-auto px-4 pb-5 md:px-8 lg:px-12">
+            <img src={ussel_1.src} alt="Ussel_1" class="h-80 w-64 shrink-0 object-cover" />
+            <img src={ussel_2.src} alt="Ussel_2" class="h-80 w-64 shrink-0 object-cover" />
+            <img src={ussel_3.src} alt="Ussel_3" class="h-80 w-64 shrink-0 object-cover" />
+            <img src={ussel_4.src} alt="Ussel_4" class="h-80 w-64 shrink-0 object-cover" />
+            <img src={ussel_5.src} alt="Ussel_5" class="h-80 w-64 shrink-0 object-cover" />
+            <img src={ussel_6.src} alt="Ussel_6" class="h-80 w-64 shrink-0 object-cover" />
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- section 4 -->
@@ -297,3 +272,24 @@ import events_2 from "../img/events_2.webp"
 
   </main>
 </Layout>
+
+  <!-- style til scrollbar på galleriet -->
+<style>
+  .gallery-scroll {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gallery-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .gallery-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .gallery-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 9999px;
+  }
+</style>
