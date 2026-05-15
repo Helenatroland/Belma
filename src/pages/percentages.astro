@@ -16,8 +16,8 @@ import Heading from '../components/heading.astro';
           <button
             id="prev-card"
             type="button"
-            aria-label="Forrige kort"
-            class="absolute left-0 top-0 z-10 font-special text-5xl leading-none text-neutral-black md:text-7xl"
+            aria-label="Previous card"
+            class="absolute left-0 top-0 z-10 font-special text-5xl leading-none text-neutral-black md:text-6xl lg:text-7xl"
           >
             ‹
           </button>
@@ -25,8 +25,8 @@ import Heading from '../components/heading.astro';
           <button
             id="next-card"
             type="button"
-            aria-label="Næste kort"
-            class="absolute right-0 top-0 z-10 font-special text-5xl leading-none text-neutral-black md:text-7xl"
+            aria-label="Next card"
+            class="absolute right-0 top-0 z-10 font-special text-5xl leading-none text-neutral-black md:text-6xl lg:text-7xl"
           >
             ›
           </button>
@@ -38,13 +38,13 @@ import Heading from '../components/heading.astro';
               NO. 5
             </Heading>
 
-            <article class="bg-accent-beige px-5 py-7 text-neutral-black shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+            <article class="bg-accent-beige px-5 py-8 text-neutral-black shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-9 md:py-10 lg:px-11 lg:py-12">
 
-              <h2 class="font-space text-[24px] font-bold md:text-[28px]">
+              <h2 class="font-space text-[22px] font-bold leading-tight md:text-[26px] lg:text-[28px]">
                 BELMA'S BEER SELECTION
               </h2>
 
-              <div class="mt-8 space-y-4 font-special text-[14px] md:mt-10 md:text-[16px]">
+              <div class="mt-8 space-y-4 font-special text-[14px] md:text-[15px] lg:text-[16px]">
 
                 <div class="grid grid-cols-[1fr_auto_auto] gap-3 md:gap-6">
                   <span>Carlsberg Pilsner</span>
@@ -64,7 +64,7 @@ import Heading from '../components/heading.astro';
                   <span>48kr/78kr</span>
                 </div>
 
-                <p>-----------------------------------</p>
+                <p>----------------------------------------</p>
 
                 <div class="grid grid-cols-[1fr_auto_auto] gap-3 md:gap-6">
                   <span>Jacobsen</span>
@@ -108,19 +108,20 @@ import Heading from '../components/heading.astro';
                   <span>78kr</span>
                 </div>
 
-                <p>-----------------------------------</p>
+                <p>----------------------------------------</p>
 
-                <p class="pt-8 text-center md:pt-10">
+                <p class="pt-8 text-center">
                   *ASK US FOR WHAT'S IN ROTATION*
                 </p>
 
               </div>
 
-              <p class="pt-14 text-right font-special text-[28px] md:pt-20 md:text-[40px]">
+              <p class="pt-16 text-right font-special text-[28px] md:text-[34px] lg:text-[40px]">
                 Beers
               </p>
 
             </article>
+
           </div>
 
           <!-- card 2 -->
@@ -130,13 +131,13 @@ import Heading from '../components/heading.astro';
               NO. 6
             </Heading>
 
-            <article class="bg-accent-beige px-5 py-7 text-neutral-black shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+            <article class="bg-accent-beige px-5 py-8 text-neutral-black shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-9 md:py-10 lg:px-11 lg:py-12">
 
-              <h2 class="font-space text-[24px] font-bold md:text-[28px]">
+              <h2 class="font-space text-[22px] font-bold leading-tight md:text-[26px] lg:text-[28px]">
                 COCKTAILS
               </h2>
 
-              <div class="mt-8 space-y-5 font-special text-[14px] md:mt-10 md:space-y-6 md:text-[16px]">
+              <div class="mt-8 space-y-6 font-special text-[14px] md:text-[15px] lg:text-[16px]">
 
                 <div>
                   <div class="flex items-end gap-1">
@@ -145,7 +146,7 @@ import Heading from '../components/heading.astro';
                     <span>145kr</span>
                   </div>
 
-                  <p class="text-[11px] leading-tight md:text-[12px]">
+                  <p class="text-[12px] leading-tight">
                     Bombay Premier Cru, Campari, Veramouth, Herbs de Provence
                   </p>
                 </div>
@@ -157,7 +158,7 @@ import Heading from '../components/heading.astro';
                     <span>125kr</span>
                   </div>
 
-                  <p class="text-[11px] leading-tight md:text-[12px]">
+                  <p class="text-[12px] leading-tight">
                     Cazadores Tequila, Mango, Lime, Elderflower
                   </p>
                 </div>
@@ -169,7 +170,7 @@ import Heading from '../components/heading.astro';
                     <span>125kr</span>
                   </div>
 
-                  <p class="text-[11px] leading-tight md:text-[12px]">
+                  <p class="text-[12px] leading-tight">
                     Bombay Premier Cru, Rhubarb, Apple, Cinnamon, Lemon, Tonic
                   </p>
                 </div>
@@ -181,7 +182,7 @@ import Heading from '../components/heading.astro';
                     <span>195kr</span>
                   </div>
 
-                  <p class="text-[11px] leading-tight md:text-[12px]">
+                  <p class="text-[12px] leading-tight">
                     Macallen 12 y.o Single Malt, Bitters, Sugar
                   </p>
                 </div>
@@ -193,22 +194,71 @@ import Heading from '../components/heading.astro';
                     <span>145kr</span>
                   </div>
 
-                  <p class="text-[11px] leading-tight md:text-[12px]">
+                  <p class="text-[12px] leading-tight">
                     Cazadores Tequila, Mezcal, Triple Sec, Lime, Agave, Chilli jam
                   </p>
                 </div>
 
-                <p class="pt-6 font-special text-[18px] md:pt-8 md:text-[22px]">
-                  Looking for classic cocktails? — Ask us!
+                <div>
+                  <div class="flex items-end gap-1">
+                    <span>No regrettos</span>
+                    <span class="mb-1 grow border-b border-dashed border-neutral-black"></span>
+                    <span>135kr</span>
+                  </div>
+
+                  <p class="text-[12px] leading-tight">
+                    Amaretto, Bacardi Ocho, Almond, Lime, Egg white
+                  </p>
+                </div>
+
+                <div>
+                  <div class="flex items-end gap-1">
+                    <span>Cherry On Top</span>
+                    <span class="mb-1 grow border-b border-dashed border-neutral-black"></span>
+                    <span>125kr</span>
+                  </div>
+
+                  <p class="text-[12px] leading-tight">
+                    Galliano Vanilla, Cherry Liqueur, Lemon, Ginger, Brown Sugar
+                  </p>
+                </div>
+
+                <div>
+                  <div class="flex items-end gap-1">
+                    <span>Moulin Rouge!</span>
+                    <span class="mb-1 grow border-b border-dashed border-neutral-black"></span>
+                    <span>125kr</span>
+                  </div>
+
+                  <p class="text-[12px] leading-tight">
+                    Maraschino Liqueur, Montenegro, Carmaleta, Orange Vermouth, Lemon
+                  </p>
+                </div>
+
+                <div>
+                  <div class="flex items-end gap-1">
+                    <span>Espresso Martini</span>
+                    <span class="mb-1 grow border-b border-dashed border-neutral-black"></span>
+                    <span>135kr</span>
+                  </div>
+
+                  <p class="text-[12px] leading-tight">
+                    Grey Goose Vodka, Kahlua, Espresso
+                  </p>
+                </div>
+
+                <p class="pt-8 font-special text-[20px]">
+                  Looking for a classic cocktails? - Ask us!
                 </p>
 
               </div>
 
-              <p class="pt-14 text-right font-special text-[28px] md:pt-20 md:text-[40px]">
+              <p class="pt-16 text-right font-special text-[28px] md:text-[34px] lg:text-[40px]">
                 Cocktails
               </p>
 
             </article>
+
           </div>
 
           <!-- card 3 -->
@@ -218,19 +268,19 @@ import Heading from '../components/heading.astro';
               NO. 7
             </Heading>
 
-            <article class="bg-primary px-5 py-7 text-neutral-white shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+            <article class="bg-primary px-5 py-8 text-neutral-white shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-9 md:py-10 lg:px-11 lg:py-12">
 
-              <h2 class="font-space text-[24px] font-bold md:text-[28px]">
+              <h2 class="font-space text-[22px] font-bold leading-tight md:text-[26px] lg:text-[28px]">
                 WINE
               </h2>
 
-              <div class="mt-8 space-y-5 font-special text-[14px] md:mt-10 md:text-[16px]">
+              <div class="mt-8 space-y-5 font-special text-[14px] md:text-[15px] lg:text-[16px]">
 
                 <p>SPARKLING</p>
 
-                <div class="flex items-end gap-1 text-[14px]">
-                  <span class="max-w-55 md:max-w-85">
-                    NV - Moingeon, Cremant - Aligote/Chardonnay/Pinot Noir
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    NV - Moingeon, Cremant - Aligote/Chardonnay/Pinot Noir - Bourgogne
                   </span>
 
                   <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
@@ -238,16 +288,110 @@ import Heading from '../components/heading.astro';
                   <span>110 / 500kr</span>
                 </div>
 
+                <p class="pt-8">ORANGE & ROSE</p>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2023 - Vin Orange - Muscat/Viognier/Grenache Blanc - Pays d'Oc
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>70 / 320kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2024 - Florian Mollet Rose - Pinot Noir - Loire
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>78 / 350kr</span>
+                </div>
+
                 <p class="pt-8">WHITE</p>
 
-                <div class="flex items-end gap-1 text-[14px]">
-                  <span class="max-w-55 md:max-w-85">
-                    2022 - Gorgee de Soleil - Chardonnay
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Gorgee de Soleil - Chardonnay - Pays d'Oc
                   </span>
 
                   <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
 
                   <span>68 / 300kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2021 - Dachs - Riesling - Pfalz (O)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>70 / 320kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2024 - Florian Mollet - Sauvignon Blanc - Loire
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>78 / 360kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Louis Jadot - Chardonnay/Aligote - Bourgogne
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>115 / 520kr</span>
+                </div>
+
+                <p class="pt-8">RED</p>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2023 - Chateau de Fesles - Pinot Noir - Loire
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>68 / 300kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    NV - Le Bistro de Montmija - Carignan/Merlot/Syrah - Pays d'Oc (O)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>70 / 320kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2023 - M. Chapoutier "& Frais" - Grenache/Syrah - Vin de France
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>85 / 365kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2021 - Chateau Macquin - Merlot/Cabernet Sauvignon - Bourdeaux
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>115 / 520kr</span>
                 </div>
 
                 <p class="pt-8 leading-tight">
@@ -256,18 +400,177 @@ import Heading from '../components/heading.astro';
                   O = Organic
                 </p>
 
+                <p class="pt-8 text-[13px]">
+                  *Belma's glass pour is 15cl*
+                </p>
+
               </div>
 
-              <p class="pt-14 text-right font-special text-[28px] md:pt-20 md:text-[40px]">
+              <p class="pt-16 text-right font-special text-[28px] md:text-[34px] lg:text-[40px]">
                 Wines & Bottles
               </p>
 
             </article>
+
+          </div>
+
+          <!-- card 4 -->
+          <div data-card class="hidden">
+
+            <Heading type="h2" stylingclasses="pb-4 text-center">
+              NO. 8
+            </Heading>
+
+            <article class="bg-primary px-5 py-8 text-neutral-white shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-9 md:py-10 lg:px-11 lg:py-12">
+
+              <h2 class="font-space text-[22px] font-bold leading-tight md:text-[26px] lg:text-[28px]">
+                WINE BOTTLES
+              </h2>
+
+              <div class="mt-8 space-y-5 font-special text-[14px] md:text-[15px] lg:text-[16px]">
+
+                <p>SPARKLING</p>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    NV - Albert Sounit "Rose Brut" - Gamay/Grenache/Merlot - Bourgogne
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>450kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Charles Frey "Brut Nature" - Pinot Blanc/Riesling/Pinot Gris - Alsace (O)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>650kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    NV - Phillipe de Natheuil "Brut" - Chardonnay/Pinot Noir/Pinot Meunier - Champagne
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>850kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Chavost "Brut Nature" - Chardonnay/Pinot Meunier - Champagne (N)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>1200kr</span>
+                </div>
+
+                <p class="pt-8">ORANGE & ROSE</p>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2023 - Wispering Angel "Le Beach" Rose - Cinsault/Grenache/Syrah - Provence
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>500kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2023 - Charles Frey "Marceration" Orange - Gewurtztraminer/Riesling - Alsace (O)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>600kr</span>
+                </div>
+
+                <p class="pt-8">WHITE</p>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2023 - Florian Mollet - Chenin Blanc - Loire
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>420kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Stephanie Grieux - Muscadet - Loire (O)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>420kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Famille Hugel - Gewurtztraminer - Alsace
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>550kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Charles Frey - Riesling - Alsace (B)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>550kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2022 - Louis Jadot - Aligote - Bourgogne
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>650kr</span>
+                </div>
+
+                <div class="flex items-end gap-1">
+                  <span class="max-w-85">
+                    2023 - Fevre & Fevre - Chardonnay - Chablis (O)
+                  </span>
+
+                  <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
+                  <span>750kr</span>
+                </div>
+
+              </div>
+
+              <p class="pt-16 text-right font-special text-[28px] md:text-[34px] lg:text-[40px]">
+                ONLY BOTTLES
+              </p>
+
+            </article>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
+
   </main>
 
   <script is:inline>
