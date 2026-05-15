@@ -6,60 +6,95 @@ import Button from '../components/button.astro';
 import dancing_man_drawing from '../img/dancing_man_drawing.svg';
 ---
 
-<Layout title="Were hiring">
+<Layout title="We're hiring">
   <main>
+
     <!-- section 1 -->
     <section class="w-full px-4 pt-12 pb-32 md:px-8 md:pt-16 md:pb-40 lg:px-12 lg:pt-20 lg:pb-48">
+
       <div class="mx-auto max-w-245">
-        <Heading type="h1" stylingclasses="text-center pb-14">
+
+        <Heading type="h1" stylingclasses="pb-10 text-center md:pb-14">
           WANT TO JOIN OUR TEAM?
         </Heading>
 
-        <Heading type="h2" stylingclasses="font-bold pt-5 pb-8">
+        <Heading
+          type="h2"
+          stylingclasses="pb-8 text-[28px] font-bold leading-tight md:pt-5 md:pb-10"
+        >
           Belma is hiring - experienced bartender, barista or waiter
         </Heading>
 
         <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+
+          <!-- text -->
           <div class="w-full lg:max-w-162.5">
-            <Text> 
+
+            <Text>
               Istedgade, Vesterbro
               <br />
               <br />
+
               We’re on the lookout for someone who knows what they’re doing - someone with solid experience behind the bar or on the floor, who brings presence, timing, and a good read on the room. :-)
               <br />
               <br />
+
               Belma is lively, a little chaotic in the best way, and always full of people. So if you thrive in fast-paced, good-vibe settings, we’d love to hear from you!
               <br />
               <br />
+
               You should:
               <br />
+
               Have relevant experience (cocktails, barista, or service)
               <br />
+
               Be confident, warm and quick on your feet
               <br />
+
               Know how to handle a rush - and still smile through it
               <br />
+
               Bring great energy to both guests and the team.
             </Text>
 
-            <Heading type="h3" stylingclasses="font-medium pt-10 pb-10">
+            <Heading
+              type="h3"
+              stylingclasses="pb-8 pt-10 text-[24px] font-medium leading-tight md:pb-10"
+            >
               Think it’s a match?
             </Heading>
+
           </div>
 
-          <img
-            src={dancing_man_drawing.src}
-            alt="Dancing man illustration"
-            class="mx-auto w-full max-w-70 md:max-w-90 lg:mx-0 lg:-mr-56 lg:max-w-115"
-          />
+          <!-- image -->
+          <div class="flex justify-center lg:justify-end">
+
+            <img
+              src={dancing_man_drawing.src}
+              alt="Dancing man illustration"
+              class="w-full max-w-52 md:max-w-72 lg:-mr-24 lg:max-w-100"
+            />
+
+          </div>
+
         </div>
 
-        <div class="flex w-full justify-center pt-4">
-          <Button variant="primary" stylingclasses="font-bold px-15">
+        <!-- button -->
+        <div class="flex w-full justify-center pt-4 md:pt-6">
+
+          <Button
+            variant="primary"
+            stylingclasses="px-12 py-3 font-bold md:px-15"
+          >
             APPLY HERE
           </Button>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 </Layout>

@@ -3,11 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Heading from '../components/heading.astro';
 import Text from '../components/text.astro';
 import Button from '../components/button.astro';
+
 import img_1 from '../img/img_1.png';
 import logo from '../img/logo_new.svg';
 import img_2 from '../img/img_2.png';
 import img_3 from '../img/img_3.svg';
 import disco from '../img/disco.svg';
+
 import gallery_1 from '../img/gallery_1.webp';
 import gallery_2 from '../img/gallery_2.webp';
 import gallery_3 from '../img/gallery_3.webp';
@@ -15,44 +17,64 @@ import gallery_4 from '../img/gallery_4.webp';
 import gallery_5 from '../img/gallery_5.webp';
 import gallery_6 from '../img/gallery_6.webp';
 ---
-<title>Home</title>
-<Layout>
+
+<Layout title="Home">
   <main>
-      <!-- section 1 -->
+
+    <!-- section 1 -->
     <section class="w-full px-4 pt-20 pb-14 md:px-8 md:pt-24 md:pb-16 lg:px-12 lg:pt-28 lg:pb-20">
       <div class="mx-auto max-w-245 text-center">
-        <img src={logo.src} alt="Belma logo" class="mx-auto w-100" />
+
+        <img
+          src={logo.src}
+          alt="Belma logo"
+          class="mx-auto w-72 md:w-90 lg:w-100"
+        />
 
         <div class="mt-10 flex justify-center">
           <Button href="/menu" variant="primary">
             EXPLORE OUR MENU
           </Button>
         </div>
+
       </div>
     </section>
 
     <!-- section 2 -->
     <section class="w-full bg-secondary px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
       <div class="mx-auto max-w-245">
-        <img src={img_1.src} alt="Belma interior" class="mx-auto w-100 pb-8" />
+
+        <img
+          src={img_1.src}
+          alt="Belma interior"
+          class="mx-auto w-full max-w-72 pb-8 md:max-w-90 lg:max-w-100"
+        />
 
         <Text stylingclasses="text-center">
           At Belma, we serve breakfast and lunch by day, and wine, beer & cocktails by night. From slow mornings with fresh coffee and brunch, to relaxed lunches and cozy evenings with drinks and small bites, Belma is designed as a place to gather, unwind, and enjoy good company. Whether you're stopping by for a quick coffee or staying for the evening atmosphere, Belma is a space to feel at home all day long.
         </Text>
+
       </div>
     </section>
 
     <!-- section 3 -->
     <section class="w-full px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
       <div class="mx-auto max-w-245">
-        <Heading type="h2" stylingclasses="text-center font-bold pb-10">
+
+        <Heading type="h2" stylingclasses="pb-10 text-center font-bold">
           OPENING HOURS
         </Heading>
 
         <div class="mx-auto w-full max-w-md bg-accent-beige px-8 py-8 text-center">
-          <img src={logo.src} alt="Belma logo" class="mx-auto mb-6 w-50" />
+
+          <img
+            src={logo.src}
+            alt="Belma logo"
+            class="mx-auto mb-6 w-50"
+          />
 
           <div class="space-y-1 font-special">
+
             <Text>Istedgade 48</Text>
             <Text>1650 København V</Text>
             <Text>+45 31 34 37 87</Text>
@@ -68,6 +90,7 @@ import gallery_6 from '../img/gallery_6.webp';
             </div>
 
             <div class="space-y-2">
+
               <div class="flex justify-between">
                 <Text>Monday</Text>
                 <Text>09:00 - 24:00</Text>
@@ -103,45 +126,56 @@ import gallery_6 from '../img/gallery_6.webp';
                 <Text>09:00 - 24:00</Text>
               </div>
 
-              <img src={img_2.src} alt="random barcode" class="mx-auto pt-4" />
+              <img
+                src={img_2.src}
+                alt="Random barcode"
+                class="mx-auto pt-4"
+              />
 
               <Text>
                 *** This is just a random barcode for show ***
               </Text>
+
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- section 4 -->
     <section class="w-full border-y border-primary px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
       <div class="mx-auto max-w-245">
-        <Heading type="h3" stylingclasses="pb-6">
+
+        <Heading type="h3" stylingclasses="font-medium pb-6">
           Would you like to become part of our community?
         </Heading>
 
         <div class="grid gap-8 md:grid-cols-2">
+
           <div class="space-y-5">
-            <Text> 
-              Sign up for our newsletter and be the first to receive exclusive offers, early access to upcoming events, the latest news, special surprises, and all the great vibes from Belma. 
-              <br>
-              <br>
-              Stay connected and never miss out on what’s happening with us. 
+            <Text>
+              Sign up for our newsletter and be the first to receive exclusive offers, early access to upcoming events, the latest news, special surprises, and all the great vibes from Belma.
+              <br />
+              <br />
+              Stay connected and never miss out on what’s happening with us.
             </Text>
           </div>
 
           <form class="flex flex-col items-center gap-4">
+
             <input
               type="email"
               placeholder="EMAIL ADDRESS"
-              class="bg-cta font-bold text-neutral-black p-3.5 text-sm md:w-100"
+              class="w-72 bg-cta p-3 text-sm font-bold text-neutral-black md:w-100"
             />
 
-            <Button stylingclasses="font-bold px-15">
+            <Button stylingclasses="px-15 font-bold">
               SUBMIT
             </Button>
+
           </form>
+
         </div>
       </div>
     </section>
@@ -150,116 +184,131 @@ import gallery_6 from '../img/gallery_6.webp';
     <section class="w-full bg-accent-beige px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:pt-20 lg:pb-10">
       <div class="mx-auto max-w-245">
 
-        <Heading type="h2" stylingclasses="font-bold pb-6">
+        <Heading type="h2" stylingclasses="pb-6 font-bold">
           RESERVE YOUR TABLE
         </Heading>
 
         <div class="space-y-5">
+
           <Text>
             From slow breakfasts and relaxed lunch breaks to evening drinks and lively late-night gatherings, Belma is made for every part of the day.
-            <br>
+            <br />
             Whether you’re meeting friends for coffee, planning a cozy date night, hosting colleagues after work, or simply taking a moment for yourself, our space is designed to feel welcoming from morning to night.
-            <br>
+            <br />
             Book your table in advance and enjoy freshly made dishes, carefully crafted cocktails, selected wines, and the warm Belma atmosphere.
-            <br>
+            <br />
             Whether it’s a casual visit or a special occasion, we look forward to creating a memorable experience for you.
           </Text>
+
         </div>
 
         <div class="mt-10 flex justify-center">
+
           <Button
             href="/reservations"
             variant="primary"
-            stylingclasses="font-bold px-15"
+            stylingclasses="px-15 font-bold"
           >
             MAKE A RESERVATION
           </Button>
+
         </div>
 
         <img
           src={img_3.src}
           alt="Table illustration"
-          class="ml-auto w-100 pt-10 md:pt-6 lg:w-120"
+          class="ml-auto w-72 pt-10 md:w-95 md:pt-6 lg:w-120"
         />
 
       </div>
     </section>
 
     <!-- section 6 -->
-<section class="w-full bg-accent-green px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
-  <div class="relative mx-auto max-w-245 overflow-hidden">
+    <section class="w-full bg-accent-green px-4 py-14 md:px-8 md:py-16 lg:px-12 lg:py-20">
+      <div class="relative mx-auto max-w-245 overflow-hidden">
 
-    <img
-      src={disco.src}
-      alt="Disco illustration"
-      class="absolute -right-6 -top-6 w-40 md:-right-10 md:-top-8 md:w-52 lg:-right-14 lg:w-64"
-    />
+        <img
+          src={disco.src}
+          alt="Disco illustration"
+          class="absolute -right-10 -top-4 w-28 md:-right-12 md:-top-6 md:w-44 lg:-right-14 lg:w-64"
+        />
 
-    <Heading type="h2" stylingclasses="font-bold text-neutral-white pb-6 pr-24 md:pr-40 lg:pr-52">
-      EVENTS AT BELMA
-    </Heading>
+        <Heading
+          type="h2"
+          stylingclasses="pb-6 pr-24 font-bold text-neutral-white md:pr-40 lg:pr-52"
+        >
+          EVENTS AT BELMA
+        </Heading>
 
-    <div class="max-w-180 space-y-5">
-      <Text stylingclasses="text-neutral-white">
-        There’s always something happening at Belma. 
-        <br>
-        From intimate dinners and live music to seasonal gatherings and special experiences, our events are designed to bring people together and create memorable moments in a warm and welcoming atmosphere. 
-        <br> 
-        As part of our community, newsletter subscribers receive early access to upcoming events, exclusive invitations, and first-hand updates before anyone else. 
-        <br>
-        <br>
-        Discover what’s coming next and become part of the Belma experience — where good food, great drinks, and meaningful moments come together.
-      </Text>
-    </div>
+        <div class="max-w-180 space-y-5">
 
-    <div class="mt-10 flex justify-center">
-      <Button href="/events" variant="primary">
-        SEE UPCOMING EVENTS
-      </Button>
-    </div>
+          <Text stylingclasses="text-neutral-white">
+            There’s always something happening at Belma.
+            <br />
+            From intimate dinners and live music to seasonal gatherings and special experiences, our events are designed to bring people together and create memorable moments in a warm and welcoming atmosphere.
+            <br />
+            As part of our community, newsletter subscribers receive early access to upcoming events, exclusive invitations, and first-hand updates before anyone else.
+            <br />
+            <br />
+            Discover what’s coming next and become part of the Belma experience — where good food, great drinks, and meaningful moments come together.
+          </Text>
 
-  </div>
-</section>
+        </div>
 
-    <!-- section 7 med galleri-->
+        <div class="mt-10 flex justify-center">
+
+          <Button href="/events" variant="primary">
+            SEE UPCOMING EVENTS
+          </Button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- section 7 -->
     <section class="w-full px-4 pt-14 pb-32 md:px-8 md:pt-16 md:pb-40 lg:px-12 lg:pt-20 lg:pb-48">
-      <div class="mx-auto grid max-w-245 grid-cols-2 gap-4 md:h-160 md:grid-cols-6 md:grid-rows-3">
+
+      <div class="mx-auto grid max-w-245 h-90 grid-cols-6 grid-rows-3 gap-2 md:h-130 md:gap-3 lg:h-160 lg:gap-4">
+
         <img
           src={gallery_1.src}
           alt="Belma food and drinks"
-          class="h-full w-full object-cover md:col-span-2 md:row-span-2"
+          class="col-span-2 row-span-2 h-full w-full object-cover"
         />
 
         <img
           src={gallery_2.src}
           alt="Belma outdoor seating"
-          class="h-full w-full object-cover md:col-span-4 md:row-span-1"
+          class="col-span-4 row-span-1 h-full w-full object-cover"
         />
 
         <img
           src={gallery_3.src}
           alt="Belma bar"
-          class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+          class="col-span-2 row-span-1 h-full w-full object-cover"
         />
 
         <img
           src={gallery_4.src}
           alt="Belma drinks"
-          class="h-full w-full object-cover md:col-span-2 md:row-span-2"
+          class="col-span-2 row-span-2 h-full w-full object-cover"
         />
 
         <img
           src={gallery_5.src}
           alt="Belma live music"
-          class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+          class="col-span-2 row-span-1 h-full w-full object-cover"
         />
 
         <img
           src={gallery_6.src}
           alt="Belma interior"
-          class="h-full w-full object-cover md:col-span-2 md:row-span-1"
+          class="col-span-2 row-span-1 h-full w-full object-cover"
         />
+
       </div>
+
     </section>
 
   </main>

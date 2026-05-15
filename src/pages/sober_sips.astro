@@ -5,14 +5,19 @@ import Heading from '../components/heading.astro';
 
 <Layout title="Sober sips">
   <main>
-<section class="w-full px-4 pt-12 pb-20 md:px-8 md:pt-16 md:pb-24 lg:px-12 lg:pt-20 lg:pb-28">
+
+    <section class="w-full px-4 pt-12 pb-20 md:px-8 md:pt-16 md:pb-24 lg:px-12 lg:pt-20 lg:pb-28">
+
       <div class="mx-auto w-full max-w-125">
+
         <div class="relative pb-20">
+
+          <!-- arrows -->
           <button
             id="prev-card"
             type="button"
             aria-label="Forrige kort"
-            class="absolute left-0 top-0 z-10 font-special text-7xl leading-none text-neutral-black"
+            class="absolute left-0 top-0 z-10 font-special text-5xl leading-none text-neutral-black md:text-7xl"
           >
             ‹
           </button>
@@ -21,32 +26,40 @@ import Heading from '../components/heading.astro';
             id="next-card"
             type="button"
             aria-label="Næste kort"
-            class="absolute right-0 top-0 z-10 font-special text-7xl leading-none text-neutral-black"
+            class="absolute right-0 top-0 z-10 font-special text-5xl leading-none text-neutral-black md:text-7xl"
           >
             ›
           </button>
 
           <!-- card 1 -->
           <div data-card>
+
             <Heading type="h2" stylingclasses="pb-4 text-center">
               NO. 3
             </Heading>
 
-            <article class="bg-accent-green px-8 py-10 text-neutral-white shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+            <article class="bg-accent-green px-5 py-7 text-neutral-white shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+
               <h2 class="font-space text-[24px] font-bold md:text-[28px]">
                 COLD DRINKS
               </h2>
 
-              <div class="mt-10 space-y-5 font-special text-[16px]">
-                <p class="pb-4">0.0% COCKTAILS</p>
+              <div class="mt-8 space-y-5 font-special text-[14px] md:mt-10 md:text-[16px]">
+
+                <p class="pb-2 md:pb-4">0.0% COCKTAILS</p>
 
                 <div>
                   <div class="flex items-end gap-1">
-                    <span>Not-a-Gin & Tonic (Highball)</span>
+                    <span class="max-w-45 md:max-w-none">
+                      Not-a-Gin & Tonic (Highball)
+                    </span>
+
                     <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
                     <span>110kr</span>
                   </div>
-                  <p class="text-[13px] leading-tight">
+
+                  <p class="text-[11px] leading-tight md:text-[13px]">
                     Tanqueray 0.0%, 3 Cents Tonic
                   </p>
                 </div>
@@ -54,15 +67,20 @@ import Heading from '../components/heading.astro';
                 <div>
                   <div class="flex items-end gap-1">
                     <span>Cloverclub (Coup)</span>
+
                     <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
                     <span>125kr</span>
                   </div>
-                  <p class="text-[13px] leading-tight">
+
+                  <p class="text-[11px] leading-tight md:text-[13px]">
                     Tanqueray 0.0%, Lemon, Raspberry
                   </p>
                 </div>
 
-                <p class="pt-12 pb-4">SODA</p>
+                <p class="pt-8 pb-2 md:pt-12 md:pb-4">
+                  SODA
+                </p>
 
                 <div class="flex items-end gap-1">
                   <span>Tonic</span>
@@ -106,46 +124,59 @@ import Heading from '../components/heading.astro';
                   <span>38kr</span>
                 </div>
 
-                <p class="pt-12 pb-4">AQUA AD LIBITUM</p>
+                <p class="pt-8 pb-2 md:pt-12 md:pb-4">
+                  AQUA AD LIBITUM
+                </p>
 
                 <div class="flex items-end gap-1">
                   <span>W/WO Bubbles</span>
                   <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
                   <span>20kr</span>
                 </div>
+
               </div>
 
-              <p class="pt-24 text-center font-special text-[34px] md:text-[40px]">
+              <p class="pt-16 text-center font-special text-[28px] md:pt-24 md:text-[40px]">
                 SOBER SIPS
               </p>
+
             </article>
           </div>
 
           <!-- card 2 -->
           <div data-card class="hidden">
+
             <Heading type="h2" stylingclasses="pb-4 text-center">
               NO. 4
             </Heading>
 
-            <article class="bg-accent-green px-8 py-10 text-neutral-white shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+            <article class="bg-accent-green px-5 py-7 text-neutral-white shadow-[0_10px_30px_rgba(0,0,0,0.14)] md:px-11 md:py-12">
+
               <h2 class="font-space text-[24px] font-bold md:text-[28px]">
                 TESELSKABET X BELMA
               </h2>
 
-              <div class="mt-10 space-y-5 font-special text-[16px]">
+              <div class="mt-8 space-y-5 font-special text-[14px] md:mt-10 md:text-[16px]">
+
                 <p>TYPE OF TEAS</p>
 
-                <div class="pt-4">
+                <div class="pt-3 md:pt-4">
                   <div class="flex items-end gap-1">
-                    <span class="max-w-97.5">
+
+                    <span class="max-w-50 md:max-w-97.5">
                       All Day Earl Grey, Cool Mint, Breakfast Blend No.2, White Tea w. Blood Orange & Ginger, Green Sencha “Tony’s Blend”
                     </span>
+
                     <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
+
                     <span>39kr</span>
+
                   </div>
                 </div>
 
-                <p class="pt-7 pb-2">HOT CHOCOLATE</p>
+                <p class="pt-6 pb-2 md:pt-7">
+                  HOT CHOCOLATE
+                </p>
 
                 <div class="flex items-end gap-1">
                   <span>Hot Chocolate</span>
@@ -159,7 +190,9 @@ import Heading from '../components/heading.astro';
                   <span>+10kr</span>
                 </div>
 
-                <p class="pt-7 pb-2">COPENHAGEN COFFEE LAB X BELMA</p>
+                <p class="pt-6 pb-2 md:pt-7">
+                  COPENHAGEN COFFEE LAB X BELMA
+                </p>
 
                 <div class="flex items-end gap-1">
                   <span>Filter Coffee</span>
@@ -215,7 +248,9 @@ import Heading from '../components/heading.astro';
                   <span>54kr</span>
                 </div>
 
-                <p class="pt-7 pb-2">ALCHOLIC HOTTIES</p>
+                <p class="pt-6 pb-2 md:pt-7">
+                  ALCOHOLIC HOTTIES
+                </p>
 
                 <div class="flex items-end gap-1">
                   <span>La Mumba</span>
@@ -234,16 +269,20 @@ import Heading from '../components/heading.astro';
                   <span class="mb-1 grow border-b border-dashed border-neutral-white"></span>
                   <span>125kr</span>
                 </div>
+
               </div>
 
-              <p class="pt-20 text-center font-special text-[34px] md:text-[40px]">
+              <p class="pt-16 text-center font-special text-[28px] md:pt-20 md:text-[40px]">
                 HOTTIES
               </p>
+
             </article>
           </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
   <script is:inline>
@@ -267,4 +306,5 @@ import Heading from '../components/heading.astro';
       showCard(currentCard === cards.length - 1 ? 0 : currentCard + 1);
     });
   </script>
+
 </Layout>
