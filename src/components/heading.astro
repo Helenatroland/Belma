@@ -1,6 +1,7 @@
 ---
-// Tailwind styling for overskrifter / labels / grafik tekst
+// Her samler vi teksttyperne ét sted, så vi kan genbruge dem på hele siden.
 const sizeClasses = {
+  display: "text-[28px] md:text-[36px] lg:text-[40px] font-special",
   h1: "text-[26px] md:text-[34px] lg:text-[38px] font-abril",
   h2: "text-[20px] md:text-[23px] lg:text-[26px] font-space",
   h3: "text-[17px] md:text-[19px] lg:text-[21px] font-space",
@@ -9,12 +10,20 @@ const sizeClasses = {
 };
 
 interface Props {
+  // "keyof typeof sizeClasses" betyder, at type kun kan være en af teksttyperne ovenfor.
   type?: keyof typeof sizeClasses;
   stylingclasses?: string;
 }
 
+// Hvis vi ikke sender en type med, bruger komponenten automatisk h1.
 const { type = "h1", stylingclasses = "" } = Astro.props as Props;
 ---
+
+{type === "display" && (
+  <span class={`${sizeClasses[type]} ${stylingclasses}`}>
+    <slot />
+  </span>
+)}
 
 {type === "h1" && (
   <h1 class={`${sizeClasses[type]} ${stylingclasses}`}>

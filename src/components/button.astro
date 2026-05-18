@@ -6,7 +6,9 @@ const { href = "#", stylingclasses = "" } = Astro.props;
   href={href}
   class:list={[
     "bg-cta hover:bg-cta-hover text-neutral-black font-abril text-[14px] md:text-[15px] lg:text-[16px] px-6 py-3 inline-block transition duration-300",
+    // Custom shadow, fordi Tailwinds standard shadows ikke ramte det visuelle udtryk vi ønskede.
     "shadow-[0_4px_10px_rgba(0,0,0,0.25)]",
+    // Gør det muligt at tilføje ekstra Tailwind-klasser, når komponenten bruges.
     stylingclasses
   ]}
 >

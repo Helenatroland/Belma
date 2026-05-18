@@ -4,10 +4,12 @@ const sizeClasses = {
 };
 
 interface Props {
+  // "keyof typeof sizeClasses" gør, at teksttype kun kan være en type fra sizeClasses.
   teksttype?: keyof typeof sizeClasses;
   stylingclasses?: string;
 }
 
+// Hvis der ikke sendes en teksttype med, bruger komponenten automatisk "Text".
 const { teksttype = "Text", stylingclasses = "" } = Astro.props as Props;
 ---
 

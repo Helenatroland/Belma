@@ -9,7 +9,7 @@ import logo from "../img/logo_new.svg"
 
 <footer class="w-full">
   <div class="w-full border-2 border-primary p-10">
-    <!----------------- Nyhedsbrev signup-------------------->
+    <!----------------- Nyhedsbrev signup -------------------->
     <div class="flex flex-col items-center gap-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
       <Text stylingclasses="text-primary">
         Sign up & get 10% off your next drink!
@@ -28,7 +28,7 @@ import logo from "../img/logo_new.svg"
 
     <div class="my-5 h-0.5 w-full bg-primary"></div>
 
-    <!----------------- Facebook og Instagram ikoner-------------------->
+    <!----------------- Sociale medier -------------------->
     <div class="mb-2 flex items-center justify-center gap-4 md:justify-start">
       <a href="https://www.facebook.com/p/Belma1650-61571598181899/">
         <img src={facebook.src} alt="Facebook" class="h-16 w-16" />
@@ -39,25 +39,28 @@ import logo from "../img/logo_new.svg"
       </a>
     </div>
 
-    <!----------------- Kontakt info og logo-------------------->
+    <!----------------- Kontakt info og logo -------------------->
     <div class="flex flex-col items-center gap-10 text-center md:flex-row md:items-end md:justify-between md:text-left">
       <div>
         <Text stylingclasses="font-bold text-primary">CONTACT</Text>
         <Text stylingclasses="text-primary">Istedgade 48</Text>
         <Text stylingclasses="text-primary">1650 København V</Text>
+
         <Text stylingclasses="text-primary">
+          {/* Telefon og mail er links, så brugeren kan trykke direkte på dem. */}
           <a href="tel:+4531343787" class="text-inherit no-underline">
             +45 31 34 37 87
           </a>
         </Text>
+
         <Text stylingclasses="text-primary">
           <a href="mailto:1650@belma.dk" class="text-inherit no-underline">
             1650@belma.dk
           </a>
         </Text>
       </div>
-      
-<img src={logo.src} alt="Logo" class="w-48 md:w-64" />
+
+      <img src={logo.src} alt="Logo" class="w-48 md:w-64" />
     </div>
   </div>
 </footer>

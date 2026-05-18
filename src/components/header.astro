@@ -2,6 +2,7 @@
 import Heading from "./heading.astro";
 import logo from "../img/logo_new.svg";
 
+// Navigationen ligger i et array, så vi kun skal rette links ét sted.
 const navItems = [
   { label: "MENU", href: "/menu" },
   { label: "RESERVATIONS", href: "/reservations" },
@@ -17,7 +18,7 @@ const navItems = [
         <img
           src={logo.src}
           alt="Belma"
-          class="h-auto w-[100px] md:w-[130px] lg:w-[170px]"
+          class="h-auto w-25 md:w-32.5 lg:w-42.5"
         />
       </a>
 
@@ -64,6 +65,7 @@ const navItems = [
 
   if (btn && menu) {
     btn.addEventListener("click", () => {
+      // Tjekker om menuen allerede er åben, så aria-expanded kan holdes korrekt.
       const isOpen = !menu.classList.contains("hidden");
 
       menu.classList.toggle("hidden");
